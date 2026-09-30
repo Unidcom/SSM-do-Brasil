@@ -1,0 +1,4 @@
+interface:
+  display_name: "Estrategista Editorial Multicanal"
+  short_description: "Planeja calendarios editoriais multicanal para clientes da Unidcom"
+  default_prompt: "Use $estrategista-editorial-multicanal para criar um planejamento editorial multicanal para este cliente."
