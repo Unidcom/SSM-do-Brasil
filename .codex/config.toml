@@ -1,0 +1,4 @@
+# MCP específico deste projeto. O Codex carrega configurações de projeto
+# quando o repositório é aberto como confiável.
+[mcp_servers.ssm_do_brasil]
+url = "https://mcp.unidcom.com.br/ssm-do-brasil"
