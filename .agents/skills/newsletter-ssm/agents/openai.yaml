@@ -1,0 +1,7 @@
+interface:
+  display_name: "Radar Estrutural SSM"
+  short_description: "Gera a Radar Estrutural SSM da SSM do Brasil."
+  brand_color: "#00539C"
+  default_prompt: "Use $newsletter-ssm para gerar a edição de hoje da Radar Estrutural SSM."
+policy:
+  allow_implicit_invocation: false

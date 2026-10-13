@@ -1,0 +1,170 @@
+{
+  "ok": true,
+  "verificado_em": "2026-10-13T15:34:09+00:00",
+  "html_sha256": "790631d00de732f3a598fa493abd25818e54d3d663851468c3f1a68c0b301b5f",
+  "total": 16,
+  "erros": [],
+  "avisos": [],
+  "resultados": [
+    {
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/elementor/thumbs/logo-white-rosghll1m2nqrkzjnxg2jk005mo5tji97hmpeo6uio.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/elementor/thumbs/logo-white-rosghll1m2nqrkzjnxg2jk005mo5tji97hmpeo6uio.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/09/Prancheta-1-1.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/09/Prancheta-1-1.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg",
+      "conteudo": "image/svg+xml",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/stf-icms-subsidio-energia-baixa-renda/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/stf-icms-subsidio-energia-baixa-renda/",
+      "conteudo": "text/html",
+      "titulo": "stf afasta icms sobre subsidio de energia para baixa renda",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/negociacoes-energia-queda-precos-futuros/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/negociacoes-energia-queda-precos-futuros/",
+      "conteudo": "text/html",
+      "titulo": "negociacoes de energia ganham forca em meio a queda dos precos futuros",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.pv-magazine-brasil.com/2026/10/09/mmgd-deve-alcancar-92-gw-de-capacidade-instalada-no-brasil-ate-2036/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.pv-magazine-brasil.com/2026/10/09/mmgd-deve-alcancar-92-gw-de-capacidade-instalada-no-brasil-ate-2036/",
+      "conteudo": "text/html",
+      "titulo": "mmgd deve alcancar 92 gw de capacidade instalada no brasil ate 2036 - pv magazine brasil",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/solution/carport/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/solution/carport/",
+      "conteudo": "text/html",
+      "titulo": "carport - ssm do brasil",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/conta-de-luz-inflacao-setembro-ipca/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/conta-de-luz-inflacao-setembro-ipca/",
+      "conteudo": "text/html",
+      "titulo": "conta de luz sobe quase 8% e lidera alta da inflacao em setembro, diz ibge",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/bandeira-verde-outubro-apos-dois-anos-vermelha/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/bandeira-verde-outubro-apos-dois-anos-vermelha/",
+      "conteudo": "text/html",
+      "titulo": "o que mudou para outubro ter bandeira verde apos 2 anos no vermelho?",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/abrate-avalia-pnast-transmissao/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/abrate-avalia-pnast-transmissao/",
+      "conteudo": "text/html",
+      "titulo": "abrate avalia que primeira etapa da pnast fortalece acesso a transmissao",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13741-Parque-de-diversoes-inaugura-maior-carport-solar-da-California.html",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.arandanet.com.br/revista/fotovolt/noticia/13741-Parque-de-diversoes-inaugura-maior-carport-solar-da-California.html",
+      "conteudo": "text/html",
+      "titulo": "parque de diversoes inaugura maior carport solar da california",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13740-Compensacao-por-cortes-de-geracao:-sai-a-lista-de-elegibilidade.html",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.arandanet.com.br/revista/fotovolt/noticia/13740-Compensacao-por-cortes-de-geracao:-sai-a-lista-de-elegibilidade.html",
+      "conteudo": "text/html",
+      "titulo": "compensacao por cortes de geracao: sai a lista de elegibilidade",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/2026/10/01/o-que-e-carport-solar-entenda-como-estacionamentos-podem-gerar-energia/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/2026/10/01/o-que-e-carport-solar-entenda-como-estacionamentos-podem-gerar-energia/",
+      "conteudo": "text/html",
+      "titulo": "o que e carport solar? entenda como estacionamentos podem gerar energia - ssm do brasil",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://wa.me/554198418202?text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es.",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://api.whatsapp.com/send/?phone=554198418202&text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0",
+      "conteudo": "text/html",
+      "titulo": "compartilhe no whatsapp",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br",
+      "conteudo": "text/html",
+      "titulo": "principal - ssm do brasil",
+      "erros": [],
+      "avisos": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+- **Skill incompleta:** antes de qualquer passo, buscar o marcador de pendência do criador (a palavra `TODO` seguida de `(criador)`, sem espaço) nos arquivos desta skill. Se houver algum, **não gerar a edição**: avisar o usuário que a skill ainda não terminou de ser criada, listar o que falta e oferecer completar agora pela skill `criador-skill-newsletter`.
+- **Isolamento:** ao executar esta newsletter, usar somente esta skill. Não acionar skills auxiliares (copywriting, Git, navegador etc.); tudo que a execução precisa está aqui. Ferramentas podem ser usadas diretamente.
+- **Data real:** confirmar a data da execução no fuso `%%FUSO%%`. Nunca presumir pela data do agendamento.
+- **Nada inventado:** não inventar dados, números, resultados, prazos ou condições comerciais. Dados de catálogo e valores ao vivo são usados exatamente como vieram.
+- **Reescrita, não tradução:** todo conteúdo externo é reescrito em português brasileiro, com contexto para o público da marca.
+- **Contagens exatas:** cada seção entrega exatamente a quantidade declarada. Se faltar material, parar e avisar — nunca completar com conteúdo fora das regras.
+- **Aprovação antes da plataforma:** a edição é publicada em `aprovacoes-unid` antes de qualquer chamada à %%PLATAFORMA_NOME%%. Sem link de aprovação, não há rascunho.
+- **Só rascunho:** esta skill cria a campanha em rascunho e nunca envia, agenda ou dispara teste. O disparo aos contatos é manual, no painel. `Status: enviado` só quando o usuário confirmar o disparo.
+- **Selecionar ≠ usar:** a rotação só avança com `rotation.py mark-used`, depois que o rascunho existir (`campaign_id`). Gerar a edição ou publicar para aprovação não avança nada.
+- **Uma tentativa externa por execução:** nunca repetir automaticamente chamadas à API. Se a campanha já foi criada e um passo seguinte falhou, retomar só o passo que falhou (`update`) — nunca criar uma segunda campanha.
+- **Artefatos no projeto:** toda edição salva `newsletter.html`, `plain-text.txt`, `payload.json` e `metadata.md` em `%%PASTA%%/AAAA-MM-DD/`. Nada fica só em memória ou em pasta temporária.
+- **Variáveis da plataforma:** %%VARS_HTML%% ficam literalmente no HTML; não são placeholders editoriais.
+- **Segredos:** credenciais só em `%%CREDENCIAIS%%` (fora do Git) ou variáveis de ambiente — nunca em config, payload, metadata, logs ou commits.

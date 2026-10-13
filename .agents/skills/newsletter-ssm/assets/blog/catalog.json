@@ -1,0 +1,134 @@
+[
+  {
+    "id": "o-que-e-carport-solar",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/09/Prancheta-1-1.png",
+    "dados": {
+      "titulo": "O que é carport solar? Entenda como estacionamentos podem gerar energia",
+      "texto": "O carport solar é uma estrutura fotovoltaica projetada para estacionamentos: sombra para os veículos e geração de energia no mesmo espaço. O post explica quando a solução compensa e o que avaliar no dimensionamento.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/10/01/o-que-e-carport-solar-entenda-como-estacionamentos-podem-gerar-energia/"
+    }
+  },
+  {
+    "id": "estrutura-de-solo-para-energia-solar",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/09/ChatGPT-Image-26-de-ago.-de-2026-16_18_18.png",
+    "dados": {
+      "titulo": "O que é estrutura de solo para energia solar? Sua importância em projetos mais competitivos",
+      "texto": "A estrutura de solo influencia diretamente prazo, custo de instalação e desempenho da usina. O post detalha tipos, materiais e critérios de escolha para projetos mais competitivos.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/09/23/o-que-e-estrutura-de-solo-para-energia-solar-entenda-sua-importancia-em-projetos-mais-competitivos/"
+    }
+  },
+  {
+    "id": "como-escolher-um-fabricante-de-estruturas-solares",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/09/ssm-2.png",
+    "dados": {
+      "titulo": "Como escolher um fabricante de estruturas solares",
+      "texto": "A engenharia da usina foi aprovada e vem a negociação com o fabricante. Capacidade produtiva, certificações, rastreabilidade e suporte técnico: o que separar antes de fechar o pedido.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/09/17/como-escolher-um-fabricante-de-estruturas-solares/"
+    }
+  },
+  {
+    "id": "aco-ou-aluminio",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/09/Prancheta-1.png",
+    "dados": {
+      "titulo": "Aço ou alumínio: qual é o melhor material para estruturas solares?",
+      "texto": "Comparativo técnico dos dois materiais mais usados em estruturas fotovoltaicas: resistência, peso, corrosão, custo e aplicação ideal de cada um. Sem resposta única — a escolha depende do projeto.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/09/10/aco-ou-aluminio-qual-e-o-melhor-material-para-estruturas-solares/"
+    }
+  },
+  {
+    "id": "ssm-na-intersolar-2026",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/09/IMG_6737-scaled.jpg",
+    "dados": {
+      "titulo": "SSM na Intersolar 2026: lançamentos, conexões e uma nova fase da empresa",
+      "texto": "Nos dias 25 e 27 de agosto, a SSM apresentou lançamentos e reforçou relacionamentos na Intersolar South America, o maior evento de energia solar da América Latina.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/09/03/ssm-na-intersolar-2026-lancamentos-conexoes-e-uma-nova-fase-da-empresa/"
+    }
+  },
+  {
+    "id": "fornecedor-de-estruturas-7-criterios",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/08/Prancheta-1.png",
+    "dados": {
+      "titulo": "Fornecedor de estruturas solares: 7 critérios para escolher o parceiro ideal",
+      "texto": "Checklist prático para avaliar fabricantes antes da compra: processo industrial, padrão entre lotes, documentação técnica, prazos e suporte durante a obra.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/08/05/fornecedor-de-estruturas-solares-7-criterios-para-escolher-o-parceiro-ideal/"
+    }
+  },
+  {
+    "id": "estrutura-fotovoltaica-para-cada-projeto",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/08/image.png_2K_202607241536-1.jpeg",
+    "dados": {
+      "titulo": "Estrutura fotovoltaica: como escolher a solução ideal para cada projeto",
+      "texto": "Telhado, solo ou carport? O post orienta como casar tipo de estrutura, material e exigências do projeto — do dimensionamento à entrega.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/08/05/estrutura-fotovoltaica-para-energia-solar-como-escolher-a-solucao-ideal-para-cada-projeto/"
+    }
+  },
+  {
+    "id": "ssm-intersolar-presenca",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/08/image.png_2K_202607241519-1-scaled.jpeg",
+    "dados": {
+      "titulo": "SSM confirma presença na Intersolar South America 2026",
+      "texto": "Convite para conhecer as novidades da SSM no principal encontro do mercado solar da América Latina, entre os dias 25 e 27 de agosto, em São Paulo.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/08/05/ssm-no-maior-evento-de-energia-solar-da-america-latina-intersolar-south-america-2026/"
+    }
+  },
+  {
+    "id": "estruturas-de-aluminio-em-ambientes-corrosivos",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-03-18-at-16.53.51.jpeg",
+    "dados": {
+      "titulo": "Como montar e manter estruturas de alumínio em ambientes corrosivos",
+      "texto": "Litoral e ambientes industriais aceleram a corrosão de estruturas metálicas. Liga correta, tratamento e manutenção: como garantir durabilidade onde o ambiente ataca.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/07/01/como-montar-e-manter-estruturas-de-aluminio-em-ambientes-corrosivos/"
+    }
+  },
+  {
+    "id": "fixacao-lateral-vs-fixacao-inferior",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-03-17-at-10.44.33-1.jpeg",
+    "dados": {
+      "titulo": "Fixação lateral vs fixação inferior: qual a diferença?",
+      "texto": "A diferença entre os dois sistemas de fixação de módulos não está na resistência estrutural, mas na forma de acesso à instalação. Entenda quando usar cada uma.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/07/01/fixacao-lateral-vs-fixacao-inferior-qual-a-diferenca/"
+    }
+  },
+  {
+    "id": "isopletas-e-vento-nbr-6123",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/Capa-3.png",
+    "dados": {
+      "titulo": "Isopletas e vento (NBR 6123) no dimensionamento fotovoltaico",
+      "texto": "Módulos e inversores costumam roubar a cena, mas é o vento — e seu cálculo pela NBR 6123 — que decide a segurança e a durabilidade da estrutura. O que revisar no dimensionamento.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/06/19/isopletas-e-vento-nbr-6123-no-dimensionamento-fotovoltaico/"
+    }
+  },
+  {
+    "id": "triangulos-e-correcao-de-inclinacao",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/ACESSORIOS-SSM-1920-x-1080-px-19.png",
+    "dados": {
+      "titulo": "Triângulos e correção de inclinação para painel solar: quando usar e como ganhar geração",
+      "texto": "Orientação, inclinação e sombreamento definem o resultado do sistema. Quando a correção de inclinação vale o investimento e como ela reduz sombreamento entre fileiras.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/06/19/triangulos-e-correcao-de-inclinacao-para-painel-solar-quando-usar-como-ganhar-geracao-e-reduzir-sombreamento/"
+    }
+  }
+]

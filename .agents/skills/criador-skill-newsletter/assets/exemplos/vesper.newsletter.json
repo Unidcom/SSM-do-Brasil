@@ -1,0 +1,198 @@
+{
+  "versao": 1,
+  "slug": "vesper",
+  "nome": "Newsletter Vésper",
+  "empresa": "Vésper Energia Solar",
+  "cor_marca": "#4070A2",
+  "fuso": "America/Sao_Paulo",
+  "agenda": {
+    "dias": [
+      "qua"
+    ],
+    "hora": "09:00"
+  },
+  "edicoes": {
+    "pasta": "newsletter"
+  },
+  "estado": "newsletter/.rotation-state.json",
+  "assunto_max": 70,
+  "nome_campanha": "Radar Vésper — {AAAA-MM-DD}",
+  "aprovacao": "dispensada-quando-solicitada-ou-agendada",
+  "aprovacao_repo": {
+    "local": "../aprovacoes-unid",
+    "pasta": "vesper",
+    "base_url": "https://unidcom.github.io/aprovacoes-unid",
+    "nome_arquivo": "newsletter-{AAAA-MM-DD}.html"
+  },
+  "visual": {
+    "cor_primaria": "#4070A2",
+    "cor_acento": "#DF9937",
+    "cor_texto": "#263442",
+    "cor_fundo": "#F3F6F9",
+    "cor_suave": "#EEF5FC",
+    "cor_escura": "#1D2935",
+    "fonte": "Montserrat,Arial,sans-serif",
+    "logo_fundo_escuro": "https://img.mailinblue.com/11777747/images/content_library/original/6a6a2c7bb73131e4e58763e5.png"
+  },
+  "rodape": {
+    "linhas": [
+      "Rua Olegário Maciel, 1615 — Juiz de Fora/MG",
+      "comercial@vespersolar.com · (32) 99909-4825"
+    ],
+    "site": "https://www.vespersolar.com/",
+    "motivo": "Você recebeu este e-mail por fazer parte da base de relacionamento da Vésper."
+  },
+  "plataforma": {
+    "tipo": "brevo",
+    "credenciais": "private/brevo.env",
+    "variaveis_html": [
+      "{{ mirror }}",
+      "{{ unsubscribe }}"
+    ],
+    "variaveis_texto": [
+      "{{ unsubscribe }}"
+    ],
+    "variaveis_espelho": [
+      "{{ mirror }}"
+    ],
+    "variaveis_descadastro": [
+      "{{ unsubscribe }}"
+    ],
+    "proibido": []
+  },
+  "secoes": [
+    {
+      "id": "abertura",
+      "tipo": "editorial",
+      "titulo": "Assunto, data e introdução",
+      "slot": "INTRO",
+      "campos": {
+        "assunto": "até 70 caracteres, sustentado pela notícia principal, uma emoção dominante",
+        "data_extenso": "data da edição no header",
+        "intro": "curta, conecta a edição a economia, segurança, planejamento ou sustentabilidade"
+      }
+    },
+    {
+      "id": "noticias",
+      "tipo": "curadoria-externa",
+      "titulo": "Destaques da semana / Giro rápido",
+      "janela_dias": 7,
+      "janela_max_dias": 10,
+      "fontes_obrigatorias": [
+        {
+          "nome": "Canal Solar",
+          "url": "https://canalsolar.com.br/"
+        },
+        {
+          "nome": "Fotovolt / Aranda",
+          "url": "https://www.arandanet.com.br/revista/fotovolt/noticias"
+        },
+        {
+          "nome": "Giro ABSOLAR",
+          "url": "https://www.absolar.org.br/posts/?category_name=giro-absolar"
+        },
+        {
+          "nome": "Energy Channel",
+          "url": "https://www.energychannel.co/"
+        },
+        {
+          "nome": "Folha — energia solar",
+          "url": "https://www1.folha.uol.com.br/folha-topicos/energia-solar/"
+        },
+        {
+          "nome": "Exame — energia solar",
+          "url": "https://exame.com/noticias-sobre/energia-solar/"
+        }
+      ],
+      "fontes_complementares": [
+        {
+          "nome": "ANEEL",
+          "url": "https://www.gov.br/aneel/"
+        },
+        {
+          "nome": "EPE",
+          "url": "https://www.epe.gov.br/pt/imprensa/noticias"
+        },
+        {
+          "nome": "pv magazine Global",
+          "url": "https://www.pv-magazine.com/"
+        }
+      ],
+      "evitar": [
+        "especulação apresentada como fato",
+        "promessas absolutas de economia",
+        "política partidária sem relação operacional"
+      ],
+      "idioma_saida": "pt-BR",
+      "blocos": [
+        {
+          "id": "destaques",
+          "quantidade": 3,
+          "slots": [
+            "HIGHLIGHT_1",
+            "HIGHLIGHT_2",
+            "HIGHLIGHT_3"
+          ],
+          "parcial": "assets/partials/highlight.html",
+          "campos": {
+            "tag": "tema",
+            "titulo": "gancho específico, sem clickbait",
+            "contexto": "80–130 palavras",
+            "impacto": "45–80 palavras, rótulo 'O que isso significa para você:'",
+            "url": "fonte"
+          }
+        },
+        {
+          "id": "curtas",
+          "quantidade": 5,
+          "slots": [
+            "QUICK_1",
+            "QUICK_2",
+            "QUICK_3",
+            "QUICK_4",
+            "QUICK_5"
+          ],
+          "campos": {
+            "titulo": "uma linha",
+            "url": "fonte"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cases",
+      "tipo": "rotacao-catalogo",
+      "titulo": "Case Vésper",
+      "slot": "CASE_BLOCK",
+      "catalogo": "assets/cases/catalog.json",
+      "ordem": "circular"
+    },
+    {
+      "id": "oferta",
+      "tipo": "calendario",
+      "titulo": "Oferta comercial",
+      "slot": "OFFER_BLOCK",
+      "regra": "semana-iso-paridade",
+      "opcoes": {
+        "impar": {
+          "id": "orcamento",
+          "modelo": "assets/offers/orcamento.html"
+        },
+        "par": {
+          "id": "viabilidade",
+          "modelo": "assets/offers/viabilidade.html"
+        }
+      }
+    },
+    {
+      "id": "metricas",
+      "tipo": "bloco-fixo",
+      "titulo": "Métricas aprovadas",
+      "valores": {
+        "clientes": "1.000+",
+        "experiencia": "6+ anos",
+        "financiamento": "72 meses"
+      }
+    }
+  ]
+}

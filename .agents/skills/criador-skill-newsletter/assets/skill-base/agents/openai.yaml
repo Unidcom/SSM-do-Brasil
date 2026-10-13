@@ -1,0 +1,7 @@
+interface:
+  display_name: "%%NOME%%"
+  short_description: "Gera a %%NOME%% da %%EMPRESA%%."
+  brand_color: "%%COR_MARCA%%"
+  default_prompt: "Use $newsletter-%%SLUG%% para gerar a edição de hoje da %%NOME%%."
+policy:
+  allow_implicit_invocation: false

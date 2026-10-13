@@ -1,0 +1,245 @@
+{
+  "versao": 1,
+  "slug": "ssm",
+  "nome": "Radar Estrutural SSM",
+  "empresa": "SSM do Brasil",
+  "cor_marca": "#00539C",
+  "fuso": "America/Sao_Paulo",
+  "agenda": {
+    "dias": [
+      "qua"
+    ],
+    "hora": "09:00"
+  },
+  "edicoes": {
+    "pasta": "newsletter"
+  },
+  "estado": "newsletter/.rotation-state.json",
+  "verificar_links": true,
+  "assunto_max": 70,
+  "nome_campanha": "Radar Estrutural SSM — {AAAA-MM-DD}",
+  "aprovacao": "dispensada-quando-solicitada-ou-agendada",
+  "aprovacao_repo": {
+    "local": "../aprovacoes-unid",
+    "pasta": "ssm",
+    "base_url": "https://unidcom.github.io/aprovacoes-unid",
+    "nome_arquivo": "newsletter-{AAAA-MM-DD}.html"
+  },
+  "visual": {
+    "cor_primaria": "#00539C",
+    "cor_acento": "#01B5E1",
+    "cor_texto": "#2F3A45",
+    "cor_fundo": "#F2F5F8",
+    "cor_suave": "#EEF4F9",
+    "cor_escura": "#041E36",
+    "cor_bloco_escuro": "#052B4D",
+    "cor_titulo": "#0A1A24",
+    "fonte": "Inter,Arial,sans-serif",
+    "fonte_titulos": "Fira Sans Condensed,Arial Narrow,Arial,sans-serif",
+    "logo_fundo_escuro": "https://ssmdobrasil.com.br/wp-content/uploads/elementor/thumbs/logo-white-rosghll1m2nqrkzjnxg2jk005mo5tji97hmpeo6uio.png"
+  },
+  "rodape": {
+    "linhas": [
+      "SSM do Brasil · CNPJ 12.273.815/0001-23",
+      "Rua Alcídio Zaniolo, 651, Roseira — São José dos Pinhais/PR",
+      "vendas@ssmdobrasil.com.br · (41) 99841-8202"
+    ],
+    "site": "https://ssmdobrasil.com.br",
+    "motivo": "Você recebeu este e-mail por fazer parte da base de relacionamento da SSM do Brasil."
+  },
+  "plataforma": {
+    "tipo": "brevo",
+    "credenciais": "private/brevo.env",
+    "variaveis_html": [
+      "{{ mirror }}",
+      "{{ unsubscribe }}"
+    ],
+    "variaveis_texto": [
+      "{{ unsubscribe }}"
+    ],
+    "variaveis_espelho": [
+      "{{ mirror }}"
+    ],
+    "variaveis_descadastro": [
+      "{{ unsubscribe }}"
+    ],
+    "proibido": []
+  },
+  "vocabulario": {
+    "priorizar": [
+      "engenharia",
+      "estrutura",
+      "dimensionamento",
+      "durabilidade",
+      "montagem",
+      "obra",
+      "previsibilidade"
+    ],
+    "secundario": [
+      "oferta",
+      "promoção",
+      "desconto"
+    ],
+    "ignorar": [
+      "Radar Estrutural",
+      "SSM"
+    ]
+  },
+  "secoes": [
+    {
+      "id": "abertura",
+      "tipo": "editorial",
+      "titulo": "Assunto, data e introdução",
+      "slot": "INTRO",
+      "campos": {
+        "assunto": "até 70 caracteres, sustentado pela notícia principal, uma emoção dominante, tom de engenharia",
+        "data_extenso": "data da edição no header",
+        "intro": "curta; conecta a edição a engenharia aplicada, obra, montagem, prazo ou previsibilidade"
+      }
+    },
+    {
+      "id": "radar-setor",
+      "tipo": "curadoria-externa",
+      "titulo": "Radar do setor / Giro rápido",
+      "janela_dias": 7,
+      "janela_max_dias": 10,
+      "fontes_obrigatorias": [
+        {
+          "nome": "Canal Solar",
+          "url": "https://canalsolar.com.br/"
+        },
+        {
+          "nome": "Fotovolt / Aranda",
+          "url": "https://www.arandanet.com.br/revista/fotovolt/noticias"
+        },
+        {
+          "nome": "Giro ABSOLAR",
+          "url": "https://www.absolar.org.br/posts/?category_name=giro-absolar"
+        },
+        {
+          "nome": "Energy Channel",
+          "url": "https://www.energychannel.co/"
+        },
+        {
+          "nome": "Folha — energia solar",
+          "url": "https://www1.folha.uol.com.br/folha-topicos/energia-solar/"
+        },
+        {
+          "nome": "Exame — energia solar",
+          "url": "https://exame.com/noticias-sobre/energia-solar/"
+        }
+      ],
+      "fontes_complementares": [
+        {
+          "nome": "ANEEL",
+          "url": "https://www.gov.br/aneel/"
+        },
+        {
+          "nome": "EPE",
+          "url": "https://www.epe.gov.br/pt/imprensa/noticias"
+        },
+        {
+          "nome": "ONS",
+          "url": "https://www.ons.org.br/"
+        },
+        {
+          "nome": "pv magazine Brasil",
+          "url": "https://www.pv-magazine-brasil.com/"
+        },
+        {
+          "nome": "pv magazine Global",
+          "url": "https://www.pv-magazine.com/"
+        },
+        {
+          "nome": "IEA — Solar PV",
+          "url": "https://www.iea.org/news?energySystem%5B0%5D=solar-pv"
+        },
+        {
+          "nome": "IRENA",
+          "url": "https://www.irena.org/News"
+        },
+        {
+          "nome": "MME",
+          "url": "https://www.gov.br/mme/"
+        },
+        {
+          "nome": "Câmara dos Deputados",
+          "url": "https://www.camara.leg.br/noticias"
+        }
+      ],
+      "evitar": [
+        "especulação apresentada como fato",
+        "promessas absolutas de economia",
+        "política partidária sem relação operacional",
+        "menção espontânea a recuperação judicial de qualquer empresa",
+        "falências e demissões sem relação operacional"
+      ],
+      "idioma_saida": "pt-BR",
+      "blocos": [
+        {
+          "id": "destaques",
+          "quantidade": 3,
+          "slots": [
+            "HIGHLIGHT_1",
+            "HIGHLIGHT_2",
+            "HIGHLIGHT_3"
+          ],
+          "parcial": "assets/partials/highlight.html",
+          "campos": {
+            "tag": "tema estratégico (ex.: regulação, estruturas, mercado)",
+            "titulo": "gancho específico, sem clickbait",
+            "contexto": "80–130 palavras",
+            "impacto": "45–80 palavras, rótulo 'O que isso significa para sua obra:'",
+            "url": "fonte"
+          }
+        },
+        {
+          "id": "curtas",
+          "quantidade": 5,
+          "slots": [
+            "QUICK_1",
+            "QUICK_2",
+            "QUICK_3",
+            "QUICK_4",
+            "QUICK_5"
+          ],
+          "campos": {
+            "titulo": "uma linha",
+            "url": "fonte"
+          }
+        }
+      ]
+    },
+    {
+      "id": "solucao-destaque",
+      "tipo": "rotacao-catalogo",
+      "titulo": "Solução em destaque",
+      "slot": "SOLUCAO_BLOCK",
+      "catalogo": "assets/solucoes/catalog.json",
+      "ordem": "circular"
+    },
+    {
+      "id": "blog-ssm",
+      "tipo": "pool-sem-repeticao",
+      "titulo": "Do blog da SSM",
+      "slot": "BLOG_BLOCK",
+      "catalogo": "assets/blog/catalog.json",
+      "janela_itens": 10
+    },
+    {
+      "id": "numeros",
+      "tipo": "bloco-fixo",
+      "titulo": "SSM em números",
+      "valores": {
+        "fundacao": "Desde 2010",
+        "garantia": "Até 30 anos de garantia",
+        "certificacoes": "ISO 9001 e CE"
+      }
+    },
+    {
+      "id": "cta-orcamento",
+      "tipo": "bloco-fixo",
+      "titulo": "CTA orçamento"
+    }
+  ]
+}

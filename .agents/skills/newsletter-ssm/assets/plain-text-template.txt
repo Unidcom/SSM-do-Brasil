@@ -1,0 +1,27 @@
+SSM DO BRASIL — {{EDITION_DATE}}
+
+{{INTRO_PLAIN}}
+
+RADAR DO SETOR
+
+{{DESTAQUES_PLAIN}}
+
+SOLUÇÃO EM DESTAQUE
+{{SOLUCAO_BLOCK_PLAIN}}
+
+GIRO RÁPIDO
+
+{{CURTAS_PLAIN}}
+
+DO BLOG DA SSM
+{{BLOG_BLOCK_PLAIN}}
+
+SSM do Brasil
+SSM do Brasil · CNPJ 12.273.815/0001-23
+Rua Alcídio Zaniolo, 651, Roseira — São José dos Pinhais/PR
+vendas@ssmdobrasil.com.br · (41) 99841-8202
+https://ssmdobrasil.com.br
+WhatsApp: (41) 99841-8202
+
+Você recebeu este e-mail por fazer parte da base de relacionamento da SSM do Brasil.
+Cancelar inscrição: {{ unsubscribe }}

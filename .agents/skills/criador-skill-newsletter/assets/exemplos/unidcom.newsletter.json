@@ -1,0 +1,222 @@
+{
+  "versao": 1,
+  "slug": "unidcom",
+  "nome": "Newsletter Unidcom",
+  "empresa": "Unidcom",
+  "cor_marca": "#0A6DBF",
+  "fuso": "America/Sao_Paulo",
+  "agenda": {
+    "dias": [
+      "seg",
+      "qui"
+    ],
+    "hora": "08:00"
+  },
+  "edicoes": {
+    "pasta": "Newsletter"
+  },
+  "estado": "Newsletter/.rotation-state.json",
+  "assunto_max": 70,
+  "nome_campanha": "Newsletter Unidcom — {AAAA-MM-DD}",
+  "aprovacao": "sempre",
+  "aprovacao_repo": {
+    "local": "../aprovacoes-unid",
+    "pasta": "unidcom",
+    "base_url": "https://unidcom.github.io/aprovacoes-unid",
+    "nome_arquivo": "newsletter-{AAAA-MM-DD}.html"
+  },
+  "visual": {
+    "cor_primaria": "#0D1117",
+    "cor_acento": "#FF7C1A",
+    "cor_texto": "#3D4452",
+    "cor_fundo": "#F2F2F2",
+    "cor_suave": "#F5F7FA",
+    "cor_escura": "#0D1117",
+    "fonte": "'Montserrat',Arial,sans-serif",
+    "logo_fundo_escuro": "https://unidcom.com.br/wp-content/uploads/2024/02/logo-white.png"
+  },
+  "rodape": {
+    "linhas": [],
+    "site": "https://unidcom.com.br/",
+    "motivo": "Você recebeu este e-mail porque se inscreveu em nosso site ou é cliente Unidcom."
+  },
+  "plataforma": {
+    "tipo": "mailerlite-classic",
+    "credenciais": "private/mailerlite-classic.env",
+    "variaveis_html": [
+      "{$url}",
+      "{$unsubscribe}"
+    ],
+    "variaveis_texto": [
+      "{$url}",
+      "{$unsubscribe}"
+    ],
+    "variaveis_espelho": [
+      "{$url}"
+    ],
+    "variaveis_descadastro": [
+      "{$unsubscribe}"
+    ],
+    "proibido": [
+      "{$name"
+    ]
+  },
+  "secoes": [
+    {
+      "id": "inscritos",
+      "tipo": "dados-ao-vivo",
+      "titulo": "Empresas em movimento (header)",
+      "slot": "TOTAL_EMPRESAS",
+      "fonte": "json",
+      "url": "https://n8n.unidcom.com.br/webhook/numeros-mailerlite",
+      "metodo": "POST",
+      "corpo": {},
+      "tentativas": 2,
+      "campos": [
+        {
+          "id": "total",
+          "rotulo": "Empresas",
+          "caminho": "data[title=_active-subscribers].total",
+          "formato": "inteiro pt-BR (33.020)"
+        }
+      ]
+    },
+    {
+      "id": "abertura",
+      "tipo": "editorial",
+      "titulo": "Assunto, data e introdução",
+      "slot": "INTRO",
+      "campos": {
+        "assunto": "gancho forte, até 70 caracteres, baseado na notícia mais impactante",
+        "data_extenso": "Quinta-feira, 17 de abril de 2026",
+        "intro": "saudação fixa 'Olá, amigo(a)' — nunca tag de nome"
+      }
+    },
+    {
+      "id": "noticias",
+      "tipo": "curadoria-externa",
+      "titulo": "Destaques do dia / Quick bullets",
+      "janela_dias": 2,
+      "janela_max_dias": 2,
+      "fontes_obrigatorias": [
+        {
+          "nome": "Social Media Today",
+          "url": "https://www.socialmediatoday.com/"
+        },
+        {
+          "nome": "MarTech",
+          "url": "https://martech.org/"
+        },
+        {
+          "nome": "HubSpot Marketing",
+          "url": "https://blog.hubspot.com/marketing"
+        },
+        {
+          "nome": "Ahrefs",
+          "url": "https://ahrefs.com/blog/"
+        },
+        {
+          "nome": "Search Engine Journal",
+          "url": "https://www.searchenginejournal.com/"
+        },
+        {
+          "nome": "Meio & Mensagem",
+          "url": "https://www.meioemensagem.com.br/"
+        }
+      ],
+      "fontes_complementares": [],
+      "evitar": [
+        "demissões em massa",
+        "falências",
+        "polêmicas negativas"
+      ],
+      "idioma_saida": "pt-BR",
+      "blocos": [
+        {
+          "id": "destaques",
+          "quantidade": 3,
+          "slots": [
+            "HIGHLIGHT_1",
+            "HIGHLIGHT_2",
+            "HIGHLIGHT_3"
+          ],
+          "parcial": "assets/partials/highlight.html",
+          "campos": {
+            "tag": "tema estratégico",
+            "titulo": "gancho editorial",
+            "contexto": "80–130 palavras",
+            "impacto": "45–80 palavras, rótulo 'O que isso significa para quem investe em marketing:'",
+            "url": "fonte"
+          }
+        },
+        {
+          "id": "bullets",
+          "quantidade": 5,
+          "slots": [
+            "QUICK_1",
+            "QUICK_2",
+            "QUICK_3",
+            "QUICK_4",
+            "QUICK_5"
+          ],
+          "campos": {
+            "emoji": "entity HTML",
+            "titulo": "uma linha",
+            "url": "fonte"
+          }
+        }
+      ]
+    },
+    {
+      "id": "da-unidcom",
+      "tipo": "fixado",
+      "titulo": "Da Unidcom para você",
+      "slot": "UNIDCOM_BLOCK",
+      "catalogo": "assets/produtos/catalog.json",
+      "item": "calculadora-cpl",
+      "substituicao_pontual": "trocar o item numa edição só com pedido explícito do usuário",
+      "senao": {
+        "tipo": "alternancia",
+        "catalogo": "assets/produtos/catalog.json",
+        "grupos": [
+          "blog",
+          "produto"
+        ]
+      }
+    },
+    {
+      "id": "stats",
+      "tipo": "dados-ao-vivo",
+      "titulo": "Stats bar",
+      "slot": "STATS_BAR",
+      "fonte": "html",
+      "url": "https://unidcom.com.br/",
+      "tentativas": 2,
+      "campos": [
+        {
+          "id": "ads",
+          "rotulo": "Investimento em Anúncios",
+          "regex": "id=\"counter-ads-value\"[^>]*data-number=\"([^\"]+)\"",
+          "formato": "R$ X,XM+"
+        },
+        {
+          "id": "closing",
+          "rotulo": "Fechamentos Realizados",
+          "regex": "id=\"counter-closing-value\"[^>]*data-number=\"([^\"]+)\"",
+          "formato": "R$ XM+"
+        },
+        {
+          "id": "roas",
+          "rotulo": "ROAS",
+          "regex": "id=\"counter-roas-value\"[^>]*data-number=\"([^\"]+)\"",
+          "formato": "XX,XX×"
+        }
+      ]
+    },
+    {
+      "id": "cta-footer",
+      "tipo": "bloco-fixo",
+      "titulo": "CTA box e footer"
+    }
+  ]
+}

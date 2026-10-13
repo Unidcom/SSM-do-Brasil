@@ -1,0 +1,68 @@
+[
+  {
+    "id": "carport",
+    "ativo": true,
+    "modelo": "assets/solucoes/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png",
+    "dados": {
+      "titulo": "Carport solar: estacionamentos que também geram energia",
+      "texto": "Estruturas metálicas para instalação de painéis solares em estacionamentos e garagens. A linha Carport Standard 2 linhas usa estrutura biposte em Aço Civil 300, com fixações em inox 304 e possibilidade de personalização conforme vagas, comprimento e número de módulos — unindo sombra para o veículo e geração de energia no mesmo espaço.",
+      "cta_url": "https://ssmdobrasil.com.br/solution/carport/"
+    }
+  },
+  {
+    "id": "solo",
+    "ativo": true,
+    "modelo": "assets/solucoes/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/SOLO-OFFGRID-1.png",
+    "dados": {
+      "titulo": "Estruturas de solo dimensionadas para cada projeto",
+      "texto": "Estruturas de solo em aço e alumínio para usinas e geração distribuída, dimensionadas conforme as cargas reais e as condições de instalação de cada terreno. Linhas mistas monoposte em Aço Civil 300 galvanizado a fogo com perfis de alumínio 6063 — montagem previsível e durabilidade comprovada em campo.",
+      "cta_url": "https://ssmdobrasil.com.br/solution/solo/"
+    }
+  },
+  {
+    "id": "telhados",
+    "ativo": true,
+    "modelo": "assets/solucoes/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-9-1024x576.png",
+    "dados": {
+      "titulo": "Telhados: solução certa para cada tipo de cobertura",
+      "texto": "Fixação segura para telhados cerâmicos, fibrocimento, metálicos, zipados e lajes. Suportes e perfis em alumínio 6063/6005-T6 com parafusos em inox 304, projetados para encaixe preciso — sem improviso em campo e sem comprometer a cobertura.",
+      "cta_url": "https://ssmdobrasil.com.br/solution/telhados/"
+    }
+  },
+  {
+    "id": "correcao-inclinacao",
+    "ativo": true,
+    "modelo": "assets/solucoes/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/orrecoes-de-inclinacao.png",
+    "dados": {
+      "titulo": "Correção de inclinação: mais geração no mesmo painel",
+      "texto": "Sistemas para ajustar o ângulo dos módulos fotovoltaicos em lajes e superfícies planas, em telhados e solo. Triângulos em alumínio 6063/6005-T6 com inclinação de até 35°, calculados conforme as normas técnicas — ganho de geração sem sacrificar a segurança estrutural.",
+      "cta_url": "https://ssmdobrasil.com.br/solution/correcaoinclinacao/"
+    }
+  },
+  {
+    "id": "acessorios",
+    "ativo": true,
+    "modelo": "assets/solucoes/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/EMENDA-em001-1.png",
+    "dados": {
+      "titulo": "Acessórios que completam a instalação com segurança",
+      "texto": "Terminais intermediários, emendas, componentes e fixadores desenvolvidos para complementar as estruturas SSM com compatibilidade total — mesma liga, mesmo padrão dimensional, mesma rastreabilidade. Menos adaptações improvisadas na montagem.",
+      "cta_url": "https://ssmdobrasil.com.br/solution/acessorios/"
+    }
+  },
+  {
+    "id": "estruturas-diversas",
+    "ativo": true,
+    "modelo": "assets/solucoes/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/POSTE-SOLAR.png",
+    "dados": {
+      "titulo": "Estruturas especiais: quando o projeto pede fora do padrão",
+      "texto": "Soluções especiais em aço e alumínio para projetos que saem do convencional — do tracker modular com isopletas calculadas para ventos de 50 m/s (NBR 6123) a postes solares e estruturas sob medida desenvolvidas pelo time de engenharia da SSM.",
+      "cta_url": "https://ssmdobrasil.com.br/solution/estruturasdiversas/"
+    }
+  }
+]
