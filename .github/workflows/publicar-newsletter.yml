@@ -30,8 +30,9 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Preparar newsletter
         run: |
-          mkdir -p _site
+          mkdir -p _site/baterias-entram-no-leilao
           cp newsletter/2026-10-29/newsletter.html _site/index.html
+          cp newsletter/2026-10-29/newsletter.html _site/baterias-entram-no-leilao/index.html
       - name: Enviar artefato
         uses: actions/upload-pages-artifact@v4
         with:
