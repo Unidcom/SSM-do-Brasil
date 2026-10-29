@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SSM do Brasil | Newsletter 14 de outubro de 2026</title>
+    <style>
+      body {
+        margin: 0;
+        background: #edf1f3;
+        color: #283542;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      a {
+        color: #17658b;
+        text-decoration: none;
+      }
+      .wrap {
+        width: 100%;
+        background: #edf1f3;
+      }
+      .shell {
+        max-width: 640px;
+        margin: auto;
+        background: #fff;
+      }
+      .pad {
+        padding: 30px 38px;
+      }
+      .top {
+        font-size: 11px;
+        color: #71808c;
+        text-align: center;
+        padding: 15px;
+      }
+      .brand {
+        background: #153c58;
+        color: #fff;
+        padding: 24px 38px;
+      }
+      .brand b {
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+      .brand small {
+        display: block;
+        letter-spacing: 2px;
+        color: #c5d8e4;
+        font-size: 10px;
+        margin-top: 5px;
+      }
+      .date {
+        font-size: 12px;
+        color: #c9dce8;
+        text-align: right;
+      }
+      .eyebrow {
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #26779e;
+        text-transform: uppercase;
+      }
+      .intro {
+        font-size: 15px;
+        line-height: 1.75;
+        color: #41515c;
+      }
+      .section {
+        padding: 26px 38px 4px;
+      }
+      .sect-title {
+        font-size: 15px;
+        letter-spacing: 1.2px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #183f59;
+        margin: 0;
+        padding-bottom: 12px;
+        border-bottom: 2px solid #2a779e;
+      }
+      .story {
+        padding: 22px 0 25px;
+        border-bottom: 1px solid #e6ecef;
+      }
+      .tag {
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        color: #4384a2;
+        font-weight: bold;
+      }
+      .story h2 {
+        font-size: 21px;
+        line-height: 1.35;
+        color: #193e57;
+        margin: 10px 0;
+      }
+      .story p,
+      .feature p,
+      .blog p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #42515c;
+        margin: 11px 0;
+      }
+      .source {
+        font-size: 11px;
+        color: #7a8992;
+      }
+      .insight {
+        background: #f2f7f9;
+        border-left: 3px solid #2c789f;
+        padding: 15px 17px;
+        margin: 16px 0;
+      }
+      .insight strong {
+        display: block;
+        color: #174e6e;
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+      .insight span {
+        font-size: 13px;
+        line-height: 1.65;
+        color: #41535e;
+      }
+      .link {
+        font-size: 12px;
+        font-weight: bold;
+        color: #17658b;
+        display: inline-block;
+        margin-top: 4px;
+      }
+      .metric {
+        background: #f1f7fa;
+        padding: 17px 20px;
+        margin: 16px 0;
+        border-radius: 4px;
+      }
+      .metric strong {
+        font-size: 32px;
+        color: #164b69;
+        display: block;
+        line-height: 1.2;
+      }
+      .metric span {
+        font-size: 12px;
+        color: #607782;
+      }
+      .feature {
+        background: #f6f9fa;
+        padding: 22px;
+        border: 1px solid #e5eef2;
+        margin-top: 18px;
+      }
+      .feature h2,
+      .blog h2 {
+        font-size: 20px;
+        line-height: 1.4;
+        color: #193e57;
+        margin: 9px 0;
+      }
+      .quick {
+        padding: 3px 0;
+      }
+      .quick-item {
+        padding: 13px 0;
+        border-bottom: 1px solid #e5ecef;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+      .quick-item:last-child {
+        border: 0;
+      }
+      .quick-item a {
+        font-weight: bold;
+      }
+      .dot {
+        color: #2b7da4;
+        padding-right: 9px;
+      }
+      .proof {
+        background: #eaf2f6;
+        padding: 20px 12px;
+        text-align: center;
+        font-size: 12px;
+        color: #1d4e6b;
+      }
+      .proof strong {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .cta {
+        background: #163f5c;
+        color: #fff;
+        text-align: center;
+        padding: 34px 32px;
+      }
+      .cta h2 {
+        margin: 0 0 12px;
+        font-size: 22px;
+      }
+      .cta p {
+        font-size: 13px;
+        line-height: 1.7;
+        color: #dce8ef;
+      }
+      .btn {
+        display: inline-block;
+        background: #fff;
+        color: #164360;
+        padding: 14px 24px;
+        border-radius: 3px;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .foot {
+        padding: 24px 35px;
+        text-align: center;
+        color: #71818c;
+        font-size: 11px;
+        line-height: 1.9;
+        background: #f8fafb;
+      }
+      .foot strong {
+        color: #1b4c69;
+      }
+      .img-placeholder {
+        padding: 30px 20px;
+        text-align: center;
+        background: linear-gradient(135deg, #dce8ee, #b8d0dc);
+        color: #25536d;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      .preheader {
+        font-size: 11px;
+        color: #71818c;
+        text-align: center;
+        padding: 12px;
+      }
+      @media (max-width: 600px) {
+        .pad {
+          padding: 24px;
+        }
+        .section {
+          padding: 23px 24px 4px;
+        }
+        .brand {
+          padding: 22px 24px;
+        }
+        .story h2 {
+          font-size: 19px;
+        }
+        .date {
+          font-size: 10px;
+        }
+        .feature {
+          padding: 17px;
+        }
+        .metric strong {
+          font-size: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table role="presentation" class="wrap" width="100%">
+      <tr>
+        <td align="center">
+          <table role="presentation" class="shell" width="100%">
+            <tr>
+              <td class="preheader">
+                STF barra ICMS sobre subsídio, mercado livre acelera e GD deve
+                dobrar até 2036.<br /><a
+                  href="https://unidcom.github.io/aprovacoes-unid/ssm/newsletter-2026-10-14-teste.html"
+                  >Ver versão original no navegador</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="brand">
+                <table width="100%">
+                  <tr>
+                    <td><b>SSM</b><small>DO BRASIL</small></td>
+                    <td class="date">
+                    Quarta-feira<br />14 de outubro de 2026
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="pad">
+                <div class="eyebrow">Boletim do setor solar</div>
+                <p class="intro">
+                  <b>Boa leitura!</b> Esta semana: o STF fechou uma discussão
+                  tributária que encarecia tarifas, o mercado livre de energia
+                  acelerou com preços futuros em queda e o plano oficial do
+                  governo projetou uma década de crescimento para a geração
+                  distribuída — com consequência direta para quem dimensiona e
+                  instala estruturas.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <h2 class="sect-title">Radar do setor</h2>
+                <div class="story">
+                  <div class="tag">Regulação</div>
+                  <h2>
+                    STF barra estados de cobrar ICMS sobre subsídio da conta de
+                    luz
+                  </h2>
+                  <p>
+                    O Supremo Tribunal Federal decidiu que os repasses da União
+                    às distribuidoras para baratear a conta de luz de
+                    consumidores de baixa renda não entram na base de cálculo do
+                    ICMS. A tese vinha sendo disputada desde que São Paulo
+                    incluiu os valores no imposto. A decisão afeta diretamente a
+                    arrecadação estadual sobre subsídios tarifários e fecha mais
+                    uma discussão sobre tributação do setor elétrico — um sinal
+                    de estabilidade para o ambiente regulatório que sustenta os
+                    projetos fotovoltaicos.
+                  </p>
+                  <div class="source">Canal Solar · 13/10/2026</div>
+                  <div class="insight">
+                    <strong>O que isso significa para sua obra</strong
+                    ><span
+                      >Menos litígio tributário sobre tarifas significa
+                      previsibilidade maior no custo de energia do cliente final
+                      — argumento que sustenta o retorno do projeto fotovoltaico
+                      na proposta comercial. Vale registrar a decisão para as
+                      argumentações de venda que citam tarifas.</span
+                    >
+                  </div>
+                  <a class="link" href="https://canalsolar.com.br/"
+                    >Ler a fonte →</a
+                  >
+                </div>
+                <div class="story">
+                  <div class="tag">Mercado</div>
+                  <h2>
+                    Queda dos preços futuros acelera negociações no mercado
+                    livre
+                  </h2>
+                  <p>
+                    O volume negociado na BBCE atingiu 22 TWh em setembro, alta
+                    de 9,2% sobre agosto, em um cenário de queda nos preços
+                    futuros de energia. Com o ambiente de preços mais favorável,
+                    consumidores livres e traders aceleraram o fechamento de
+                    contratos. Para o setor solar, movimento desses costuma
+                    antecipar decisões de investimento: quando o preço de
+                    referência cai, o comparativo entre comprar energia e gerar
+                    a própria passa a ser revisado contrato a contrato.
+                  </p>
+                  <div class="source">Canal Solar · 10/10/2026</div>
+                  <div class="insight">
+                    <strong>O que isso significa para sua obra</strong
+                    ><span
+                      >Clientes em decisão entre mercado livre e geração própria
+                      vão reabrir a conta. Ter o projeto estrutural dimensionado
+                      e pronto para orçar — sem esperar a obra engatar — é o que
+                      permite aproveitar essa janela de decisão.</span
+                    >
+                  </div>
+                  <a class="link" href="https://canalsolar.com.br/"
+                    >Ler a fonte →</a
+                  >
+                </div>
+                <div class="story">
+                  <div class="tag">Geração distribuída</div>
+                  <h2>
+                    Geração distribuída deve dobrar e chegar a 91,7 GW até 2036
+                  </h2>
+                  <p>
+                    O Plano Decenal de Expansão de Energia (PDE 2036), elaborado
+                    pela EPE, projeta que a micro e minigeração distribuída
+                    saltará de cerca de 50 GW hoje para 91,7 GW em 2036 — 38% de
+                    toda a expansão elétrica do país no período. O segmento deve
+                    adicionar 41,4 GW e atrair R$ 96 bilhões em investimentos
+                    entre 2027 e 2036, puxados principalmente pela fonte solar
+                    fotovoltaica.
+                  </p>
+                  <div class="metric">
+                    <strong>91,7 GW</strong
+                    ><span
+                      >Capacidade projetada de geração distribuída até
+                      2036</span
+                    >
+                  </div>
+                  <div class="source">pv magazine Brasil · 09/10/2026</div>
+                  <div class="insight">
+                    <strong>O que isso significa para sua obra</strong
+                    ><span
+                      >O plano oficial confirma uma década de demanda para quem
+                      instala. Estrutura bem dimensionada e fornecimento
+                      previsível são o que separa quem captura esse crescimento
+                      de quem para na fila do retrabalho.</span
+                    >
+                  </div>
+                  <a class="link" href="https://www.pv-magazine-brasil.com/"
+                    >Ler a fonte →</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <h2 class="sect-title">Solução em destaque</h2>
+                <div class="feature">
+                  <div class="tag">Carport solar</div>
+                  <h2>
+                    Carport solar: estacionamentos que também geram energia
+                  </h2>
+                  <p>
+                    Estruturas metálicas para instalação de painéis solares em
+                    estacionamentos e garagens. A linha Carport Standard 2
+                    linhas usa estrutura biposte em Aço Civil 300, com fixações
+                    em inox 304 e possibilidade de personalização conforme
+                    vagas, comprimento e número de módulos — unindo sombra para
+                    o veículo e geração de energia no mesmo espaço.
+                  </p>
+                  <a class="link" href="https://ssmdobrasil.com.br/"
+                    >Conhecer a solução →</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="section">
+                <h2 class="sect-title">Giro rápido</h2>
+                <div class="quick">
+                  <div class="quick-item">
+                    <span class="dot">●</span
+                    ><a href="https://canalsolar.com.br/"
+                      >Conta de luz foi o item que mais pressionou o IPCA de
+                      setembro</a
+                    >
+                    — alta de 7,98% no mês, maior impacto individual entre 377
+                    itens pesquisados pelo IBGE.
+                  </div>
+                  <div class="quick-item">
+                    <span class="dot">●</span
+                    ><a href="https://canalsolar.com.br/"
+                      >Outubro volta à bandeira verde após dois anos no
+                      vermelho</a
+                    >
+                    — sem taxa extra na conta de luz, após outubro de 2024 e
+                    2025 em bandeira vermelha.
+                  </div>
+                  <div class="quick-item">
+                    <span class="dot">●</span
+                    ><a href="https://canalsolar.com.br/"
+                      >ABRATE avalia que primeira etapa da PNAST fortalece
+                      acesso à transmissão</a
+                    >
+                    — entidade destaca competitividade do novo marco para novos
+                    empreendimentos.
+                  </div>
+                  <div class="quick-item">
+                    <span class="dot">●</span
+                    ><a href="https://www.arandanet.com.br/"
+                      >Parque de diversões inaugura o maior carport solar da
+                      Califórnia</a
+                    >
+                    — estacionamento coberto por estruturas fotovoltaicas como
+                    referência internacional.
+                  </div>
+                  <div class="quick-item">
+                    <span class="dot">●</span
+                    ><a href="https://www.arandanet.com.br/"
+                      >Compensação por cortes de geração: sai a lista de
+                      elegibilidade</a
+                    >
+                    — definição de quem tem direito à indenização quando o
+                    sistema manda reduzir a geração.
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="section" style="padding-bottom: 28px">
+                <h2 class="sect-title">Do blog da SSM</h2>
+                <div class="blog" style="padding-top: 20px">
+                  <div class="tag">Conteúdo técnico</div>
+                  <h2>
+                    O que é carport solar? Entenda como estacionamentos podem
+                    gerar energia
+                  </h2>
+                  <p>
+                    O carport solar é uma estrutura fotovoltaica projetada para
+                    estacionamentos: sombra para os veículos e geração de
+                    energia no mesmo espaço. O post explica quando a solução
+                    compensa e o que avaliar no dimensionamento.
+                  </p>
+                  <a class="link" href="https://ssmdobrasil.com.br/"
+                    >Ler no blog →</a
+                  >
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="proof">
+                <table width="100%">
+                  <tr>
+                    <td width="33%">
+                      <strong>Desde 2010</strong>engenharia aplicada
+                    </td>
+                    <td width="34%">
+                      <strong>Até 30 anos</strong>de garantia estrutural
+                    </td>
+                    <td width="33%">
+                      <strong>ISO 9001 e CE</strong>produção certificada
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="cta">
+                <h2>Pronto para o seu próximo projeto?</h2>
+                <p>
+                  Conte com nossa equipe de engenharia para dimensionar a
+                  solução estrutural ideal — fabricação nacional, qualidade
+                  certificada e suporte técnico especializado.
+                </p>
+                <a class="btn" href="https://wa.me/5541998418202"
+                  >Solicitar orçamento →</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="foot">
+                <strong>SSM do Brasil</strong> · CNPJ 12.273.815/0001-23<br />Rua
+                Alcídio Zaniolo, 651, Roseira — São José dos Pinhais/PR<br />vendas@ssmdobrasil.com.br
+                · (41) 99841-8202<br /><a href="https://ssmdobrasil.com.br/"
+                  >ssmdobrasil.com.br</a
+                ><br /><br />Você recebeu este e-mail por fazer parte da base de
+                relacionamento da SSM do Brasil.<br />Descadastro disponível no
+                e-mail recebido.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

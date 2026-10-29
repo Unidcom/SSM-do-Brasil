@@ -1,0 +1,13 @@
+{
+  "plataforma": "brevo",
+  "campaign_id": 82,
+  "link": "https://app.brevo.com/marketing-campaign/edit/82",
+  "nome": "Radar Estrutural SSM — 2026-10-14 V3",
+  "status": "draft",
+  "scheduled_at": null,
+  "remetente": "marketing@ssmdobrasil.com.br",
+  "listas": [21, 5, 4, 22, 12],
+  "conteudo": "importado da página pública de aprovação por htmlUrl",
+  "verificado_em": "2026-10-13",
+  "envio": "não realizado"
+}

@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "verificado_em": "2026-10-13",
+  "escopo": "Validação estática da V3 e verificação HTTP dos assets externos. Nenhuma campanha ou rascunho da Brevo foi criado ou alterado.",
+  "validacao_estatica": {
+    "html_bytes": 20866,
+    "referencias_unicas": 20,
+    "placeholder_mirror": 1,
+    "placeholder_unsubscribe": 1,
+    "tokens_drive_pendentes": 0,
+    "tabelas_abertas": 20,
+    "tabelas_fechadas": 20,
+    "linhas_abertas": 42,
+    "linhas_fechadas": 42,
+    "celulas_abertas": 50,
+    "celulas_fechadas": 50,
+    "imagens_no_html": 11,
+    "assets_unicos": 10,
+    "links_da_v2_ausentes_na_v3": 0
+  },
+  "assets_revalidados": [
+    {"url":"https://ssmdobrasil.com.br/wp-content/uploads/2026/10/logotipo-branco-ssm-scaled.png","status":200,"conteudo":"image/png"},
+    {"url":"https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png","status":200,"conteudo":"image/png"},
+    {"url":"https://ssmdobrasil.com.br/wp-content/uploads/2026/09/Prancheta-1-1.png","status":200,"conteudo":"image/png"},
+    {"url":"https://canalsolar.com.br/wp-content/uploads/2026/10/Canal-Solar-STF-afasta-cobranca-de-ICMS-sobre-subsidio-de-energia-para-consumidores-de-baixa-renda.webp","status":200,"conteudo":"image/webp"},
+    {"url":"https://canalsolar.com.br/wp-content/uploads/2026/10/Canal-Solar-Negociacoes-de-energia-ganham-forca-em-meio-a-queda-dos-precos-futuros-.webp","status":200,"conteudo":"image/webp"},
+    {"url":"https://www.pv-magazine-brasil.com/wp-content/uploads/2025/12/Screenshot-2025-12-09-at-08.19.54-1536x1134-1.png","status":200,"conteudo":"image/png"},
+    {"url":"https://img.icons8.com/ios-filled/50/01B5E1/instagram-new--v1.png","status":200,"conteudo":"image/png"},
+    {"url":"https://img.icons8.com/ios-filled/50/01B5E1/facebook-new.png","status":200,"conteudo":"image/png"},
+    {"url":"https://img.icons8.com/ios-filled/50/01B5E1/linkedin.png","status":200,"conteudo":"image/png"},
+    {"url":"https://img.icons8.com/ios-filled/50/01B5E1/youtube-play.png","status":200,"conteudo":"image/png"}
+  ],
+  "resultado": "Todos os links existentes na V2 também estão presentes na V3; os dez assets únicos retornaram HTTP 200.",
+  "pendencia_visual": "A revisão final em desktop e largura móvel deve ser feita no preview da Brevo ou em um cliente de e-mail antes de publicar."
+}

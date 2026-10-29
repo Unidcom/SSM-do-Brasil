@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "verificado_em": "2026-10-13",
+  "escopo": "Validação estática da V2 e nova verificação de todos os assets de imagem. Os links editoriais e comerciais são os mesmos da edição de origem, cujo relatório foi validado em 2026-10-13.",
+  "validacao_estatica": {
+    "html_bytes": 23347,
+    "referencias_unicas": 27,
+    "referencias_http": 24,
+    "placeholder_mirror": 1,
+    "placeholder_unsubscribe": 1,
+    "tokens_drive_pendentes": 0,
+    "tabelas_abertas": 19,
+    "tabelas_fechadas": 19,
+    "linhas_abertas": 38,
+    "linhas_fechadas": 38,
+    "celulas_abertas": 50,
+    "celulas_fechadas": 50,
+    "imagens": 8
+  },
+  "assets_revalidados": [
+    {"url":"https://ssmdobrasil.com.br/wp-content/uploads/2026/10/logotipo-branco-ssm-scaled.png","status":200,"conteudo":"image/png"},
+    {"url":"https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png","status":200,"conteudo":"image/png"},
+    {"url":"https://ssmdobrasil.com.br/wp-content/uploads/2026/09/Prancheta-1-1.png","status":200,"conteudo":"image/png"},
+    {"url":"https://img.icons8.com/ios-filled/50/01B5E1/instagram-new--v1.png","status":200,"conteudo":"image/png"},
+    {"url":"https://img.icons8.com/ios-filled/50/01B5E1/facebook-new.png","status":200,"conteudo":"image/png"},
+    {"url":"https://img.icons8.com/ios-filled/50/01B5E1/linkedin.png","status":200,"conteudo":"image/png"},
+    {"url":"https://img.icons8.com/ios-filled/50/01B5E1/youtube-play.png","status":200,"conteudo":"image/png"}
+  ],
+  "links_preservados_da_edicao_origem": [
+    "https://canalsolar.com.br/stf-icms-subsidio-energia-baixa-renda/",
+    "https://canalsolar.com.br/negociacoes-energia-queda-precos-futuros/",
+    "https://www.pv-magazine-brasil.com/2026/10/09/mmgd-deve-alcancar-92-gw-de-capacidade-instalada-no-brasil-ate-2036/",
+    "https://canalsolar.com.br/conta-de-luz-inflacao-setembro-ipca/",
+    "https://canalsolar.com.br/bandeira-verde-outubro-apos-dois-anos-vermelha/",
+    "https://canalsolar.com.br/abrate-avalia-pnast-transmissao/",
+    "https://www.arandanet.com.br/revista/fotovolt/noticia/13741-Parque-de-diversoes-inaugura-maior-carport-solar-da-California.html",
+    "https://www.arandanet.com.br/revista/fotovolt/noticia/13740-Compensacao-por-cortes-de-geracao:-sai-a-lista-de-elegibilidade.html",
+    "https://ssmdobrasil.com.br/solution/carport/",
+    "https://ssmdobrasil.com.br/2026/10/01/o-que-e-carport-solar-entenda-como-estacionamentos-podem-gerar-energia/",
+    "https://wa.me/554198418202?text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es.",
+    "https://ssmdobrasil.com.br"
+  ],
+  "erros": [],
+  "avisos": [
+    "A prévia visual local não pôde ser aberta pelo navegador integrado devido à política de URLs file://. A revisão visual final deve ocorrer no preview da Brevo ou em um cliente de e-mail de teste.",
+    "Os links de redes sociais permanecem clicáveis; como destinos de plataformas terceiras, não foram revalidados nesta execução."
+  ]
+}
