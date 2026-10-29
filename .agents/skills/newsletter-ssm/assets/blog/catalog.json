@@ -1,5 +1,17 @@
 [
   {
+    "id": "estrutura-solar-modular-projetos-solo",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/PRIME-MODULAR.png",
+    "dados": {
+      "titulo": "Estrutura Solar Modular: Vantagens para Projetos em Solo",
+      "texto": "Projetos fotovoltaicos em solo exigem organização no canteiro, controle de materiais e menos ajustes manuais. O post mostra como uma estrutura modular pode apoiar o planejamento da montagem e a previsibilidade da obra.",
+      "texto_curto": "Entenda como a estrutura modular pode apoiar a organização da montagem em projetos fotovoltaicos de solo.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/10/20/estrutura-solar-modular-vantagens-para-projetos-em-solo/"
+    }
+  },
+  {
     "id": "o-que-e-carport-solar",
     "ativo": true,
     "modelo": "assets/blog/models/item-1.html",
