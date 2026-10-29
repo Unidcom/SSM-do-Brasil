@@ -39,3 +39,5 @@ jobs:
       - name: Publicar
         id: deployment
         uses: actions/deploy-pages@v4
+
+# Publicação acionada após habilitar o GitHub Pages.
