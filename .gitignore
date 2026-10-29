@@ -144,6 +144,5 @@ vite.config.ts.timestamp-*
 
 # newsletter (criador-skill-newsletter)
 .tmp/
-private/
 __pycache__/
 *.py[cod]
