@@ -31,12 +31,14 @@ A ordem abaixo é a ordem no e-mail. A especificação completa de cada seção 
 
 | # | Seção | Tipo | Como puxa | Slot | Estado avança |
 |---:|---|---|---|---|---|
-| 1 | Assunto, data e introdução (`abertura`) | texto da edição (`editorial`) | escrito a cada edição a partir do conteúdo selecionado | `{{INTRO}}` | — |
-| 2 | Radar do setor (`radar-setor`) | curadoria de notícias (`curadoria-externa`) | busca em 6 fontes obrigatórias, últimos 7 dias → 3 destaques + 5 curtas | `{{HIGHLIGHT_1}}`, `{{HIGHLIGHT_2}}`, `{{HIGHLIGHT_3}}`, `{{QUICK_1}}`, `{{QUICK_2}}`, `{{QUICK_3}}`, `{{QUICK_4}}`, `{{QUICK_5}}` | — |
+| 1 | Hero: assunto, data, capas, introdução e takeaways (`abertura`) | texto da edição (`editorial`) | escrito a cada edição a partir do conteúdo selecionado; 3 capas = imagem de cada destaque | `{{SUBJECT}}`, `{{PREHEADER}}`, `{{EDITION_DATE}}`, `{{INTRO}}`, `{{HERO_COVER_1}}`, `{{HERO_COVER_2}}`, `{{HERO_COVER_3}}`, `{{TAKEAWAY_1}}`, `{{TAKEAWAY_2}}`, `{{TAKEAWAY_3}}` | — |
+| 2 | Radar do setor (`radar-setor`) | curadoria de notícias (`curadoria-externa`) | busca em 6 fontes obrigatórias, últimos 7 dias → 3 destaques (1 principal + 2 compactos) + 5 curtas | `{{HIGHLIGHT_1}}`, `{{HIGHLIGHT_2}}`, `{{HIGHLIGHT_3}}`, `{{QUICK_1}}`, `{{QUICK_2}}`, `{{QUICK_3}}`, `{{QUICK_4}}`, `{{QUICK_5}}` | — |
 | 3 | Solução em destaque (`solucao-destaque`) | rotação em ordem (`rotacao-catalogo`) | próximo item de `assets/solucoes/catalog.json`, ordem circular | `{{SOLUCAO_BLOCK}}` | `mark-used` após o `campaign_id` do rascunho |
 | 4 | Do blog da SSM (`blog-ssm`) | sem repetição recente (`pool-sem-repeticao`) | item de `assets/blog/catalog.json` fora dos últimos 10 usados | `{{BLOG_BLOCK}}` | `mark-used` após o `campaign_id` do rascunho |
 | 5 | SSM em números (`numeros`) | bloco fixo (`bloco-fixo`) | fixo: Desde 2010, Até 30 anos de garantia, ISO 9001 e CE | — | — |
-| 6 | CTA orçamento (`cta-orcamento`) | bloco fixo (`bloco-fixo`) | fixo (no template): botão com ícone WhatsApp → wa.me/554198418202 | — | — |
+| 6 | CTA orçamento (`cta-orcamento`) | bloco fixo (`bloco-fixo`) | fixo (no template): botão ciano "Solicitar orçamento pelo WhatsApp →" → wa.me/554198418202 | — | — |
+
+O layout de referência é o da edição `newsletter/2026-10-14-teste-v3/newsletter.html` (hero com mosaico de capas, destaque principal + 2 compactos, Solução em faixa azul-clara, Giro rápido em linhas, blog, números, CTA e rodapé com redes sociais). `assets/template.html` é a versão com placeholders desse layout.
 
 ## Fluxo
 
@@ -88,8 +90,22 @@ Tipo `curadoria-externa` — notícias de fontes externas. Regras editoriais com
 
 | Bloco | Quantidade | Slots | Campos |
 |---|---:|---|---|
-| destaques (parcial `assets/partials/highlight.html`) | 3 (exato) | `{{HIGHLIGHT_1}}`, `{{HIGHLIGHT_2}}`, `{{HIGHLIGHT_3}}` | `tag`: tema estratégico (ex.: regulação, estruturas, mercado); `titulo`: gancho específico, sem clickbait; `contexto`: 80–130 palavras; `impacto`: 45–80 palavras, rótulo 'O que isso significa para sua obra:'; `url`: fonte |
-| curtas (parcial `assets/partials/quick-item.html`) | 5 (exato) | `{{QUICK_1}}`, `{{QUICK_2}}`, `{{QUICK_3}}`, `{{QUICK_4}}`, `{{QUICK_5}}` | `titulo`: uma linha; `url`: fonte |
+| destaques (parciais `assets/partials/highlight-featured.html` para o 1 e `assets/partials/highlight-compact.html` para o 2 e o 3) | 3 (exato) | `{{HIGHLIGHT_1}}`, `{{HIGHLIGHT_2}}`, `{{HIGHLIGHT_3}}` | `tag`: tema estratégico (ex.: regulação, estruturas, mercado); `titulo`: gancho específico, sem clickbait; `contexto`: destaque 1 com 35–60 palavras, destaques 2 e 3 com 25–45; `impacto`: destaque 1 com 15–30 palavras, destaques 2 e 3 com 10–25 (o rótulo 'Para a obra:' já vem no parcial); `url`: fonte; `imagem_capa`: capa do mosaico (ver abaixo) |
+| curtas (parcial `assets/partials/quick-item.html`) | 5 (exato) | `{{QUICK_1}}`, `{{QUICK_2}}`, `{{QUICK_3}}`, `{{QUICK_4}}`, `{{QUICK_5}}` | `titulo`: uma linha, sem resumo; `url`: fonte |
+
+O destaque 1 é o principal da edição (a notícia mais forte para a obra do leitor). A ordem dos destaques define a ordem das capas e dos takeaways do hero.
+
+**Capas do mosaico (uma por destaque):**
+
+- **Padrão:** a imagem da própria notícia — `og:image` (ou imagem principal) da página da matéria aberta nesta execução. Preferir JPG/PNG; WebP só se não houver alternativa (o validador avisa: Outlook desktop não renderiza). Registrar a URL de cada capa em `metadata.md`.
+- **Alternativa (sem imagem utilizável, link quebrado, imagem de baixa qualidade ou direitos duvidosos):** gerar uma imagem ilustrativa do tema do destaque (normalmente pelo Codex), sem logotipos de terceiros, sem dados inventados e sem texto embutido. Salvar JPG/PNG em `newsletter/AAAA-MM-DD/imagens/` (proporção ~207×210, ex.: 414×420) e publicar por HTTPS **antes de montar o HTML**:
+
+```powershell
+python .agents/skills/newsletter-ssm/scripts/publish_approval.py newsletter/AAAA-MM-DD --so-imagens
+```
+
+  O comando imprime as URLs públicas (`aprovacoes-unid/ssm/img/AAAA-MM-DD/…`), que entram no HTML. Registrar em `metadata.md` quais capas foram geradas e por quê.
+- Cada capa linka para a URL do destaque correspondente. Nunca usar o logo/arte de terceiros como capa.
 
 1. Calcular a janela a partir da data da edição e aceitar somente notícias publicadas dentro dela. Confirmar a data na página original, não no resultado de busca.
 2. Verificar **todas** as fontes obrigatórias. Usar as complementares para completar ou para confirmar alegações regulatórias/financeiras em fonte primária.
@@ -103,7 +119,7 @@ Tipo `curadoria-externa` — notícias de fontes externas. Regras editoriais com
 Tipo `rotacao-catalogo` — um item por edição, em ordem circular, do catálogo `assets/solucoes/catalog.json`.
 
 1. Usar o item que `rotation.py select` retornou para `solucao-destaque`. Não escolher outro por conta própria.
-2. Partir do modelo HTML do item (`modelo_path`). Não alterar números, segmento ou resultados do item — eles vêm do catálogo.
+2. Partir do modelo HTML do item (`modelo_path`). Não alterar números, segmento ou resultados do item — eles vêm do catálogo. `{{BODY}}` usa `dados.texto_curto` (o texto do layout v3); `dados.texto` é a versão completa e só entra se o item não tiver `texto_curto`.
 3. Preview local pode usar `imagem_local`; o HTML de envio exige `imagem_publica` HTTPS (`pronto_para_envio: true`). Sem URL pública, parar antes do envio.
 4. Inserir em `{{SOLUCAO_BLOCK}}`. Não avançar o estado aqui — só no passo de confirmação.
 
@@ -111,9 +127,9 @@ Tipo `rotacao-catalogo` — um item por edição, em ordem circular, do catálog
 
 Tipo `pool-sem-repeticao` — qualquer item do catálogo `assets/blog/catalog.json` que não esteja entre os últimos 10 usados.
 
-1. **Atualizar o catálogo antes de selecionar:** buscar os posts mais recentes no blog da SSM pela API do WordPress e acrescentar ao catálogo os que ainda não estão nele (não apagar itens existentes; post antigo continua elegível para rotação). Endpoint: `https://ssmdobrasil.com.br/wp-json/wp/v2/posts?per_page=12&_fields=id,date,link,title,excerpt,featured_media` — e, para cada post novo, resolver a imagem em `https://ssmdobrasil.com.br/wp-json/wp/v2/media/<featured_media>?_fields=source_url`. Preencher `id` (slug curto do post), `titulo` (título do post), `texto` (1–2 frases do resumo, reescritas), `cta_url` (link do post) e `imagem_publica` (URL HTTPS da imagem destacada). Se a API falhar, usar o catálogo como está — nunca inventar post.
+1. **Atualizar o catálogo antes de selecionar:** buscar os posts mais recentes no blog da SSM pela API do WordPress e acrescentar ao catálogo os que ainda não estão nele (não apagar itens existentes; post antigo continua elegível para rotação). Endpoint: `https://ssmdobrasil.com.br/wp-json/wp/v2/posts?per_page=12&_fields=id,date,link,title,excerpt,featured_media` — e, para cada post novo, resolver a imagem em `https://ssmdobrasil.com.br/wp-json/wp/v2/media/<featured_media>?_fields=source_url`. Preencher `id` (slug curto do post), `titulo` (título do post), `texto` (1–2 frases do resumo, reescritas), `texto_curto` (uma frase, até ~20 palavras, usada no e-mail), `cta_url` (link do post) e `imagem_publica` (URL HTTPS da imagem destacada). Se a API falhar, usar o catálogo como está — nunca inventar post.
 2. Usar o item que `rotation.py select` retornou para `blog-ssm`.
-3. Montar o bloco a partir do modelo do item ou do parcial padrão e inserir em `{{BLOG_BLOCK}}`.
+3. Montar o bloco a partir do modelo do item (`{{BODY}}` = `texto_curto`) e inserir em `{{BLOG_BLOCK}}`.
 4. Não avançar o estado aqui — só no passo de confirmação.
 
 #### SSM em números (`numeros`)
@@ -139,22 +155,26 @@ Conteúdo definido no próprio `assets/template.html`.
 
 Escrever por último, quando o conteúdo já está definido:
 
-- **Assunto:** até 70 caracteres, sustentado pela notícia/conteúdo principal da edição. Uma única emoção dominante (curiosidade, urgência, contraste, dado surpreendente). Específico — com número, plataforma, regra ou consequência concreta quando houver. O corpo precisa entregar exatamente o que o assunto promete; nada de clickbait vazio nem fórmulas gastas ("você não vai acreditar").
+- **Assunto** (`{{SUBJECT}}`): até 70 caracteres, sustentado pela notícia/conteúdo principal da edição. Uma única emoção dominante (curiosidade, urgência, contraste, dado surpreendente). Específico — com número, plataforma, regra ou consequência concreta quando houver. O corpo precisa entregar exatamente o que o assunto promete; nada de clickbait vazio nem fórmulas gastas ("você não vai acreditar"). O mesmo texto vai no `<title>` e no `<h1>` do hero — o validador exige que o `<h1>` seja igual ao assunto do payload.
 - **Pré-header** (`{{PREHEADER}}`): complementa o assunto, sem repeti-lo, até ~90 caracteres.
-- **Data** (`{{EDITION_DATE}}`): por extenso, do passo de data.
+- **Data** (`{{EDITION_DATE}}`): por extenso, do passo de data, sem ponto final.
+- **Deck** (`{{INTRO}}`): 20–35 palavras sob o título do hero; traduz a edição para quem dimensiona, instala e entrega estrutura.
+- **Takeaways** (`{{TAKEAWAY_1}}`–`{{TAKEAWAY_3}}`): uma chamada de até 5 palavras por destaque, na ordem dos destaques (a numeração 01–03 já está no template).
 - Antes de fechar o assunto, conferir: chama atenção em dois segundos? A edição sustenta a promessa? Está no tom da marca?
 
-#### Assunto, data e introdução (`abertura`)
+#### Hero: assunto, data, capas, introdução e takeaways (`abertura`)
 
 Tipo `editorial` — escrito a cada edição a partir do conteúdo já selecionado.
 
-- `assunto`: até 70 caracteres, sustentado pela notícia principal, uma emoção dominante, tom de engenharia
+- `assunto`: até 70 caracteres, sustentado pela notícia principal, uma emoção dominante, tom de engenharia; vira o `<h1>`
 - `data_extenso`: data da edição no header
-- `intro`: curta; conecta a edição a engenharia aplicada, obra, montagem, prazo ou previsibilidade
+- `intro`: deck, 20–35 palavras; conecta a edição a engenharia aplicada, obra, montagem, prazo ou previsibilidade
+- `takeaways`: 3 chamadas numeradas, uma por destaque
+- `capas`: 3 imagens do mosaico (ver "Capas do mosaico" no Radar do setor); cada uma preenche o parcial `assets/partials/hero-cover.html` e linka para a URL do destaque correspondente
 
 ### Passo 4 — Montar HTML e plain text
 
-1. Partir de `assets/template.html` — estrutura, cores, espaçamentos e ordem são fixos. Substituir **somente** os placeholders `{{MAIÚSCULAS}}`; parciais em `assets/partials/`.
+1. Partir de `assets/template.html` — estrutura, cores, espaçamentos e ordem são fixos. Substituir **somente** os placeholders `{{MAIÚSCULAS}}`; parciais em `assets/partials/`: `hero-cover.html` (3×), `highlight-featured.html` (destaque 1), `highlight-compact.html` (destaques 2 e 3), `quick-item.html` (5×). Solução e blog vêm dos modelos do catálogo.
 2. Preservar literalmente as variáveis de sistema da plataforma: `{{ mirror }}`, `{{ unsubscribe }}`. Elas não são placeholders editoriais e só viram links válidos no processamento da plataforma.
 3. Regras de compatibilidade e identidade: `references/identidade-visual.md`. Nunca `display:flex`, `grid`, `linear-gradient`, `rgba()`, JavaScript, imagem em base64 ou caminho local.
 4. Plain text a partir de `assets/plain-text-template.txt`, com as variáveis `{{ unsubscribe }}`.
@@ -165,6 +185,7 @@ Salvar **dentro do projeto**, na pasta da edição:
 
 - `newsletter.html` — HTML completo, autossuficiente;
 - `plain-text.txt`;
+- `imagens/` — só quando alguma capa for gerada (JPG/PNG);
 - `metadata.md` — começa com `Status: rascunho local`; registra data, assunto, itens de cada seção (com fontes das notícias), valores ao vivo, exceções de janela e, depois, IDs/links externos;
 - `payload.json` — montado pelo validador, em formato fixo: `nome_campanha`, `assunto`, `pre_header`, `html`, `texto`, `link_aprovacao`.
 
@@ -177,7 +198,7 @@ python .agents/skills/newsletter-ssm/scripts/check_links.py newsletter/AAAA-MM-D
 ```
 
 - Abre cada link e imagem do HTML e grava `links-report.json`. Erro: domínio inexistente, HTTP 4xx/5xx, domínio à venda, imagem que não é imagem, página que não menciona o texto `--esperado`.
-- Passar `--esperado` para **todo link de conteúdo externo** (notícia, evento): `URL=nome do evento` ou `URL=trecho do título da matéria`. Isso prova que o link é da coisa certa, não só que abre.
+- Passar `--esperado` para **todo link de conteúdo externo** (notícia, evento): `URL=nome do evento` ou `URL=trecho do título da matéria`. Isso prova que o link é da coisa certa, não só que abre. As capas do mosaico linkam para as mesmas URLs dos destaques, então o mesmo `--esperado` as cobre; as imagens das capas também são abertas e validadas como imagem.
 - Erro → trocar o link pelo correto (achado na fonte original ou no site oficial) e rodar de novo. Nunca deduzir uma URL pelo nome do evento/site — toda URL vem de uma página aberta nesta execução.
 - Aviso de redirecionamento → trocar pela URL final. Aviso de bloqueio (401/403/429) → abrir a página por outro meio (WebFetch/navegador), confirmar e registrar em `metadata.md`.
 
@@ -187,7 +208,7 @@ python .agents/skills/newsletter-ssm/scripts/validate_edition.py newsletter/AAAA
 
 Com `verificar_links: true` no config, o validador recusa a edição sem `links-report.json` aprovado e do mesmo HTML.
 
-`--sync` grava nome da campanha (`Radar Estrutural SSM — {AAAA-MM-DD}`), assunto, pré-header, HTML e texto no `payload.json`; depois valida placeholders esquecidos, variáveis obrigatórias, CSS proibido, imagens sem HTTPS, mojibake, tamanho do assunto e divergência entre payload e HTML. **Com qualquer erro, corrigir e validar de novo — nunca enviar.** Toda edição posterior do HTML exige novo `--sync`.
+`--sync` grava nome da campanha (`Radar Estrutural SSM — {AAAA-MM-DD}`), assunto, pré-header, HTML e texto no `payload.json`; depois valida placeholders esquecidos, variáveis obrigatórias, CSS proibido, imagens sem HTTPS, mojibake, tamanho do assunto e divergência entre payload e HTML, além da estrutura do hero: exatamente 3 capas clicáveis que linkam, na ordem, para as 3 fontes dos destaques; um único `<h1>` igual ao assunto; 3 takeaways preenchidos (avisa capa em WebP ou sem width/height). **Com qualquer erro, corrigir e validar de novo — nunca enviar.** Toda edição posterior do HTML exige novo `--sync`.
 
 Nunca concluir uma edição sem `newsletter.html` salvo no projeto.
 

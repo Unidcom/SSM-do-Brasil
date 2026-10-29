@@ -28,8 +28,8 @@ Cobrir energia solar, setor elétrico, regulação, estruturas e construção �
 
 | Bloco | Quantidade | Slots | Campos |
 |---|---:|---|---|
-| destaques (parcial `assets/partials/highlight.html`) | 3 (exato) | `{{HIGHLIGHT_1}}`, `{{HIGHLIGHT_2}}`, `{{HIGHLIGHT_3}}` | `tag`: tema estratégico (ex.: regulação, estruturas, mercado); `titulo`: gancho específico, sem clickbait; `contexto`: 80–130 palavras; `impacto`: 45–80 palavras, rótulo 'O que isso significa para sua obra:'; `url`: fonte |
-| curtas (parcial `assets/partials/quick-item.html`) | 5 (exato) | `{{QUICK_1}}`, `{{QUICK_2}}`, `{{QUICK_3}}`, `{{QUICK_4}}`, `{{QUICK_5}}` | `titulo`: uma linha; `url`: fonte |
+| destaques (parciais `assets/partials/highlight-featured.html` para o 1 e `assets/partials/highlight-compact.html` para o 2 e o 3) | 3 (exato) | `{{HIGHLIGHT_1}}`, `{{HIGHLIGHT_2}}`, `{{HIGHLIGHT_3}}` | `tag`: tema estratégico (ex.: regulação, estruturas, mercado); `titulo`: gancho específico, sem clickbait; `contexto`: destaque 1 com 35–60 palavras, destaques 2 e 3 com 25–45; `impacto`: destaque 1 com 15–30 palavras, destaques 2 e 3 com 10–25 (rótulo 'Para a obra:' no parcial); `url`: fonte; `imagem_capa`: capa do mosaico |
+| curtas (parcial `assets/partials/quick-item.html`) | 5 (exato) | `{{QUICK_1}}`, `{{QUICK_2}}`, `{{QUICK_3}}`, `{{QUICK_4}}`, `{{QUICK_5}}` | `titulo`: uma linha, sem resumo; `url`: fonte |
 
 Confirmar a data de publicação na página original, não apenas no resultado de busca.
 
@@ -60,7 +60,9 @@ Evitar sempre:
 
 - A tag indica o **tema estratégico**, não a fonte.
 - Título com gancho específico — tensão, contraste ou consequência prática — sem clickbait. Evitar títulos meramente descritivos ("Empresa lança recurso X").
-- Contexto com fonte, data, dado específico e por que importa; não traduzir literalmente.
-- Bloco de impacto fecha com uma implicação concreta: o que revisar, medir, testar, evitar ou priorizar. Nada de "é importante ficar atento".
+- O destaque 1 é o principal da edição: a notícia com maior consequência para a obra. Os destaques 2 e 3 são compactos — um dado e uma consequência, sem rodeio.
+- Contexto com fonte, data, dado específico e por que importa; não traduzir literalmente. Dentro do limite curto, cortar adjetivo e histórico, nunca o dado nem a fonte.
+- O "Para a obra:" fecha com uma implicação concreta: o que revisar, medir, testar, evitar ou priorizar. Nada de "é importante ficar atento".
+- Cada destaque ganha uma capa no mosaico do topo: imagem da própria matéria por padrão (og:image); imagem gerada só quando a da matéria não servir. Nunca usar logo ou arte de terceiros como capa.
 - Fontes estrangeiras: reescrever com contexto brasileiro e não sugerir que regra de outro país vale aqui.
 - Legislação, tarifas, incentivos e números financeiros: confirmar em fonte oficial/primária.

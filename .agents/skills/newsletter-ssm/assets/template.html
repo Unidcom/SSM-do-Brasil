@@ -1,75 +1,145 @@
 <!doctype html>
 <html lang="pt-BR" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="x-apple-disable-message-reformatting">
-  <title>{{SUBJECT}}</title>
-</head>
-<body style="margin:0;padding:0;background-color:#041E36;">
-  <span style="display:none;font-size:1px;color:#041E36;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;">{{PREHEADER}}</span>
-  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#041E36">
-    <tr><td align="center" style="padding:0;">
-      <table role="presentation" width="620" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" style="width:100%;max-width:620px;background-color:#FFFFFF;">
-        <tr><td bgcolor="#041E36" align="right" style="padding:8px 4px 8px;background-color:#041E36;font:400 11px Inter,Arial,sans-serif;color:#8B929E;">Dificuldade para visualizar? <a href="{{ mirror }}" style="color:#01B5E1;text-decoration:underline;">Ver no navegador</a></td></tr>
-        <tr><td height="4" bgcolor="#01B5E1" style="height:4px;background-color:#01B5E1;font-size:0;line-height:0;">&nbsp;</td></tr>
-        <tr><td bgcolor="#00539C" style="padding:26px 34px;background-color:#00539C;">
-          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no" />
+    <title>{{SUBJECT}}</title>
+  </head>
+  <body style="margin:0;padding:0;background-color:#edf2f5;">
+    <span style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;color:#edf2f5;">{{PREHEADER}}</span>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#EDF2F5" style="background-color:#edf2f5;">
+      <tr>
+        <td align="center" style="padding:0 10px;">
+          <table role="presentation" width="620" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" style="width:100%;max-width:620px;background-color:#ffffff;">
             <tr>
-              <td><img src="https://ssmdobrasil.com.br/wp-content/uploads/elementor/thumbs/logo-white-rosghll1m2nqrkzjnxg2jk005mo5tji97hmpeo6uio.png" width="160" alt="SSM do Brasil" style="display:block;width:160px;max-width:100%;height:auto;border:0;"></td>
-              <td align="right" style="color:#FFFFFF;font:500 12px Inter,Arial,sans-serif;">{{EDITION_DATE}}</td>
+              <td align="right" bgcolor="#041E36" style="padding:9px 30px;background-color:#041e36;color:#b9cedd;font:400 11px Inter,Arial,sans-serif;">
+                Dificuldade para visualizar? <a href="{{ mirror }}" style="color:#ffffff;text-decoration:underline;">Ver no navegador</a>
+              </td>
+            </tr>
+            <tr>
+              <td height="4" bgcolor="#01B5E1" style="height:4px;background-color:#01b5e1;font-size:0;line-height:0;">&nbsp;</td>
+            </tr>
+            <tr>
+              <td bgcolor="#00539C" style="padding:22px 34px;background-color:#00539c;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td valign="middle">
+                      <img src="https://ssmdobrasil.com.br/wp-content/uploads/2026/10/logotipo-branco-ssm-scaled.png" width="155" alt="SSM do Brasil" style="display:block;width:155px;max-width:100%;height:auto;border:0;" />
+                    </td>
+                    <td align="right" valign="middle" style="color:#ffffff;font:500 12px/1.4 Inter,Arial,sans-serif;">
+                      {{EDITION_DATE}}
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- seção: abertura (editorial) — mosaico de 3 capas (uma por destaque do Radar) + título, deck e 3 takeaways -->
+            <tr>
+              <td bgcolor="#041E36" style="background-color:#041e36;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td width="33.33%" valign="top" style="border-right:3px solid #e5f6fb;">{{HERO_COVER_1}}</td>
+                    <td width="33.33%" valign="top" style="border-right:3px solid #e5f6fb;">{{HERO_COVER_2}}</td>
+                    <td width="33.33%" valign="top">{{HERO_COVER_3}}</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#041E36" style="padding:30px 34px 32px;background-color:#041e36;">
+                <p style="margin:0 0 12px;color:#01b5e1;font:600 12px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1.4px;text-transform:uppercase;">Radar Estrutural SSM</p>
+                <h1 style="margin:0 0 12px;color:#ffffff;font:700 34px/1.08 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">{{SUBJECT}}</h1>
+                <p style="margin:0 0 22px;color:#d7e5ef;font:400 15px/1.6 Inter,Arial,sans-serif;">{{INTRO}}</p>
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td width="33%" valign="top" style="padding:0 12px 0 0;color:#ffffff;font:600 12px/1.45 Inter,Arial,sans-serif;">
+                      <span style="color:#01b5e1;font:700 22px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">01</span><br />{{TAKEAWAY_1}}
+                    </td>
+                    <td width="33%" valign="top" style="padding:0 8px;color:#ffffff;font:600 12px/1.45 Inter,Arial,sans-serif;">
+                      <span style="color:#01b5e1;font:700 22px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">02</span><br />{{TAKEAWAY_2}}
+                    </td>
+                    <td width="33%" valign="top" style="padding:0 0 0 12px;color:#ffffff;font:600 12px/1.45 Inter,Arial,sans-serif;">
+                      <span style="color:#01b5e1;font:700 22px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">03</span><br />{{TAKEAWAY_3}}
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- seção: radar-setor (curadoria-externa) — destaque 1 principal; 2 e 3 compactos -->
+            <tr>
+              <td style="padding:34px 34px 10px;">
+                <p style="margin:0;color:#00539c;font:600 13px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1.2px;text-transform:uppercase;">Radar do setor</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:14px 34px 24px;">{{HIGHLIGHT_1}}</td>
+            </tr>
+            <tr>
+              <td style="padding:0 34px 16px;">{{HIGHLIGHT_2}}</td>
+            </tr>
+            <tr>
+              <td style="padding:0 34px 34px;">{{HIGHLIGHT_3}}</td>
+            </tr>
+            <!-- seção: solucao-destaque (rotacao-catalogo) — faixa azul-clara com card branco -->
+            <tr>
+              <td bgcolor="#E5F6FB" style="padding:31px 34px;background-color:#e5f6fb;">
+                <p style="margin:0 0 12px;color:#00539c;font:600 12px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;">Solução em destaque</p>
+                {{SOLUCAO_BLOCK}}
+              </td>
+            </tr>
+            <!-- seção: radar-setor / giro rápido (5 curtas) -->
+            <tr>
+              <td style="padding:34px 34px 22px;">
+                <p style="margin:0 0 14px;color:#00539c;font:600 13px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1.2px;text-transform:uppercase;">Giro rápido</p>
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-bottom:1px solid #d8e2e8;">
+                  {{QUICK_1}}
+                  {{QUICK_2}}
+                  {{QUICK_3}}
+                  {{QUICK_4}}
+                  {{QUICK_5}}
+                </table>
+              </td>
+            </tr>
+            <!-- seção: blog-ssm (pool-sem-repeticao) -->
+            <tr>
+              <td style="padding:8px 34px 36px;">
+                <p style="margin:0 0 12px;color:#00539c;font:600 13px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1.2px;text-transform:uppercase;">Do blog da SSM</p>
+                {{BLOG_BLOCK}}
+              </td>
+            </tr>
+            <!-- seção: numeros (bloco-fixo) -->
+            <tr>
+              <td bgcolor="#00539C" style="padding:0 18px;background-color:#00539c;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
+                  <td width="33%" align="center" valign="top" style="padding:25px 8px;color:#ffffff;font:700 21px/1.15 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">Desde 2010<br /><span style="color:#cbe8f4;font:400 11px/1.4 Inter,Arial,sans-serif;">transformando engenharia em soluções</span></td>
+                  <td width="33%" align="center" valign="top" style="padding:25px 8px;color:#ffffff;font:700 21px/1.15 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">Até 30 anos<br /><span style="color:#cbe8f4;font:400 11px/1.4 Inter,Arial,sans-serif;">de garantia estrutural</span></td>
+                  <td width="33%" align="center" valign="top" style="padding:25px 8px;color:#ffffff;font:700 21px/1.15 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">ISO 9001 e CE<br /><span style="color:#cbe8f4;font:400 11px/1.4 Inter,Arial,sans-serif;">produção certificada</span></td>
+                </tr></table>
+              </td>
+            </tr>
+            <!-- seção: cta-orcamento (bloco-fixo) -->
+            <tr>
+              <td bgcolor="#041E36" align="center" style="padding:38px 34px;background-color:#041e36;">
+                <h2 style="margin:0 0 9px;color:#ffffff;font:700 28px/1.15 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">Pronto para o seu próximo projeto?</h2>
+                <p style="margin:0 0 21px;color:#d7e5ef;font:400 14px/1.6 Inter,Arial,sans-serif;">Conte com nossa equipe de engenharia para dimensionar a solução estrutural ideal. Fabricação nacional, qualidade certificada e suporte técnico especializado.</p>
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0"><tr><td bgcolor="#01B5E1" style="padding:13px 24px;background-color:#01b5e1;"><a href="https://wa.me/554198418202?text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es." style="color:#0a1a24;text-decoration:none;font:700 13px Inter,Arial,sans-serif;">Solicitar orçamento pelo WhatsApp &#8594;</a></td></tr></table>
+              </td>
+            </tr>
+            <!-- rodapé -->
+            <tr>
+              <td bgcolor="#052B4D" style="padding:28px 0 0;background-color:#052b4d;color:#c8d6df;font:400 11px/1.65 Inter,Arial,sans-serif;">
+                <table role="presentation" width="500" align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%;max-width:500px;"><tr>
+                  <td width="38%" align="center" valign="middle" style="padding:8px 18px 22px 20px;"><img src="https://ssmdobrasil.com.br/wp-content/uploads/2026/10/logotipo-branco-ssm-scaled.png" width="145" alt="SSM do Brasil" style="display:block;width:145px;max-width:100%;height:auto;border:0;" /></td>
+                  <td width="62%" valign="top" style="padding:8px 20px 22px 18px;border-left:1px solid #1d4768;"><strong style="color:#ffffff;font:600 11px Inter,Arial,sans-serif;letter-spacing:.7px;text-transform:uppercase;">SSM do Brasil</strong><br />CNPJ 12.273.815/0001-23<br />Rua Alcídio Zaniolo, 651, Roseira<br />São José dos Pinhais/PR<br /><a href="mailto:vendas@ssmdobrasil.com.br" style="color:#01b5e1;text-decoration:none;">vendas@ssmdobrasil.com.br</a><br /><a href="https://wa.me/554198418202" style="color:#01b5e1;text-decoration:none;">(41) 99841-8202</a></td>
+                </tr></table>
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td align="center" style="padding:15px 30px 25px;border-top:1px solid #1d4768;"><span style="color:#c8d6df;font:400 10px Inter,Arial,sans-serif;">Acompanhe a SSM</span><br /><br /><a href="https://www.instagram.com/ssm_do_brasil?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" style="text-decoration:none;"><img src="https://img.icons8.com/ios-filled/50/01B5E1/instagram-new--v1.png" width="20" height="20" alt="Instagram" style="display:inline-block;width:20px;height:20px;border:0;margin:0 6px;" /></a><a href="https://www.facebook.com/ssmdobrasil" style="text-decoration:none;"><img src="https://img.icons8.com/ios-filled/50/01B5E1/facebook-new.png" width="20" height="20" alt="Facebook" style="display:inline-block;width:20px;height:20px;border:0;margin:0 6px;" /></a><a href="https://www.linkedin.com/company/ssm-do-brasil/?viewAsMember=true" style="text-decoration:none;"><img src="https://img.icons8.com/ios-filled/50/01B5E1/linkedin.png" width="20" height="20" alt="LinkedIn" style="display:inline-block;width:20px;height:20px;border:0;margin:0 6px;" /></a><a href="https://www.youtube.com/@ssmdobrasil" style="text-decoration:none;"><img src="https://img.icons8.com/ios-filled/50/01B5E1/youtube-play.png" width="20" height="20" alt="YouTube" style="display:inline-block;width:20px;height:20px;border:0;margin:0 6px;" /></a><br /><br /><a href="https://ssmdobrasil.com.br" style="color:#01b5e1;text-decoration:none;">ssmdobrasil.com.br</a><br />Você recebeu este e-mail por fazer parte da base de relacionamento da SSM do Brasil.<br /><a href="{{ unsubscribe }}" style="color:#01b5e1;">Cancelar inscrição</a></td></tr></table>
+              </td>
             </tr>
           </table>
-        </td></tr>
-        <!-- seção: abertura (editorial) -->
-        <tr><td style="padding:30px 34px 14px;color:#2F3A45;font:400 15px/1.7 Inter,Arial,sans-serif;"><p style="margin:0;">{{INTRO}}</p></td></tr>
-        <!-- seção: radar-setor (curadoria-externa) -->
-        <tr><td style="padding:16px 34px 10px;"><p style="margin:0;color:#01B5E1;font:500 13px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;">RADAR DO SETOR</p></td></tr>
-        <tr><td style="padding:0 34px 12px;">{{HIGHLIGHT_1}}</td></tr>
-        <tr><td style="padding:0 34px 12px;">{{HIGHLIGHT_2}}</td></tr>
-        <tr><td style="padding:0 34px 12px;">{{HIGHLIGHT_3}}</td></tr>
-        <!-- seção: solucao-destaque (rotacao-catalogo) — faixa escura, destaque entre as notícias e o giro -->
-        <tr><td bgcolor="#052B4D" style="padding:26px 34px 24px;background-color:#052B4D;">
-          <p style="margin:0 0 12px;color:#01B5E1;font:500 13px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;">Solução em destaque</p>
-          {{SOLUCAO_BLOCK}}
-        </td></tr>
-        <tr><td bgcolor="#EEF4F9" style="padding:24px 34px;background-color:#EEF4F9;">
-          <p style="margin:0 0 14px;color:#0A1A24;font:500 13px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;">Giro rápido</p>
-          {{QUICK_1}}
-          {{QUICK_2}}
-          {{QUICK_3}}
-          {{QUICK_4}}
-          {{QUICK_5}}
-        </td></tr>
-        <!-- seção: blog-ssm (pool-sem-repeticao) -->
-        <tr><td style="padding:26px 34px 4px;"><p style="margin:0;color:#01B5E1;font:500 13px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;">Do blog da SSM</p></td></tr>
-        <tr><td style="padding:10px 34px 28px;">{{BLOG_BLOCK}}</td></tr>
-        <!-- seção: numeros (bloco-fixo) -->
-        <tr><td bgcolor="#00539C" style="background-color:#00539C;padding:0 12px;"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td align="center" width="33%" style="padding:24px 6px;color:#FFFFFF;font:700 24px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">Desde 2010<br><span style="font:400 12px Inter,Arial,sans-serif;color:#BFE3F2;">engenharia aplicada</span></td><td align="center" width="33%" style="padding:24px 6px;color:#FFFFFF;font:700 24px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">Até 30 anos<br><span style="font:400 12px Inter,Arial,sans-serif;color:#BFE3F2;">de garantia estrutural</span></td><td align="center" width="33%" style="padding:24px 6px;color:#FFFFFF;font:700 24px 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">ISO 9001 e CE<br><span style="font:400 12px Inter,Arial,sans-serif;color:#BFE3F2;">produção certificada</span></td></tr></table></td></tr>
-        <!-- seção: cta-orcamento (bloco-fixo) — faixa escura como o pré-footer do site -->
-        <tr><td bgcolor="#052B4D" style="padding:40px 34px;background-color:#052B4D;">
-          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
-            <tr><td align="center"><h2 style="margin:0 0 8px;color:#FFFFFF;font:700 26px/1.25 'Fira Sans Condensed','Arial Narrow',Arial,sans-serif;">Pronto para o seu próximo projeto?</h2></td></tr>
-            <tr><td align="center" style="padding-bottom:20px;"><p style="margin:0;color:#C8D6E2;font:400 14px/1.6 Inter,Arial,sans-serif;">Conte com nossa equipe de engenharia para dimensionar a solução estrutural ideal — fabricação nacional, qualidade certificada e suporte técnico especializado.</p></td></tr>
-            <tr><td align="center">
-              <table role="presentation" cellspacing="0" cellpadding="0" border="0"><tr>
-                <td bgcolor="#01B5E1" width="44" align="center" style="background-color:#01B5E1;padding:13px 0 13px 26px;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/whatsapp.svg" width="18" height="18" alt="WhatsApp" style="display:block;width:18px;height:18px;border:0;vertical-align:middle;"></td>
-                <td bgcolor="#01B5E1" style="background-color:#01B5E1;padding:13px 30px 13px 12px;"><a href="https://wa.me/554198418202?text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es." style="color:#0A1A24;text-decoration:none;font:600 14px Inter,Arial,sans-serif;">Solicitar Orçamento</a></td>
-              </tr></table>
-            </td></tr>
-          </table>
-        </td></tr>
-        <tr><td bgcolor="#041E36" align="center" style="padding:28px 30px;background-color:#041E36;color:#C8D0D8;font:400 11px/1.7 Inter,Arial,sans-serif;">
-          <img src="https://ssmdobrasil.com.br/wp-content/uploads/elementor/thumbs/logo-white-rosghll1m2nqrkzjnxg2jk005mo5tji97hmpeo6uio.png" width="130" alt="SSM do Brasil" style="display:block;width:130px;height:auto;margin:0 auto 14px;border:0;">
-          SSM do Brasil · CNPJ 12.273.815/0001-23<br>
-          Rua Alcídio Zaniolo, 651, Roseira — São José dos Pinhais/PR<br>
-          vendas@ssmdobrasil.com.br · (41) 99841-8202<br>
-          <a href="https://ssmdobrasil.com.br" style="color:#01B5E1;text-decoration:none;">ssmdobrasil.com.br</a><br>
-          Você recebeu este e-mail por fazer parte da base de relacionamento da SSM do Brasil.<br>
-          <a href="{{ unsubscribe }}" style="color:#01B5E1;">Cancelar inscrição</a>
-        </td></tr>
-      </table>
-    </td></tr>
-  </table>
-</body>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

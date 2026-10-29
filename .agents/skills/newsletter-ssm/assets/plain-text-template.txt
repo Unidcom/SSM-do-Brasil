@@ -1,6 +1,8 @@
-SSM DO BRASIL — {{EDITION_DATE}}
+RADAR ESTRUTURAL SSM — {{EDITION_DATE}}
 
-{{INTRO_PLAIN}}
+{{SUBJECT}}
+
+Nesta edição: {{INTRO_PLAIN}}
 
 RADAR DO SETOR
 
@@ -15,6 +17,10 @@ GIRO RÁPIDO
 
 DO BLOG DA SSM
 {{BLOG_BLOCK_PLAIN}}
+
+Pronto para o seu próximo projeto?
+Conte com nossa equipe de engenharia para dimensionar a solução estrutural ideal. Fabricação nacional, qualidade certificada e suporte técnico especializado.
+Solicite orçamento: https://wa.me/554198418202?text=Olá,+vim+da+newsletter+e+gostaria+de+mais+informações.
 
 SSM do Brasil
 SSM do Brasil · CNPJ 12.273.815/0001-23

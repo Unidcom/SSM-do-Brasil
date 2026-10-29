@@ -39,7 +39,7 @@ Números de market-share, projetos entregues ou clientes atendidos: **não aprov
 
 ## Ofertas e CTAs
 
-- **CTA principal — Solicitar Orçamento.** Botão com ícone WhatsApp, link direto `https://wa.me/554198418202?text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es.` (número oficial do site). CTA fixo no template (seção `cta-orcamento`) — não muda entre edições.
+- **CTA principal — Solicitar Orçamento.** Botão ciano "Solicitar orçamento pelo WhatsApp →" (sem ícone de imagem), link direto `https://wa.me/554198418202?text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es.` (número oficial do site). CTA fixo no template (seção `cta-orcamento`) — não muda entre edições.
 - **Solução em destaque** (seção `solucao-destaque`): rotação circular pelas 6 linhas do catálogo (`assets/solucoes/catalog.json`), cada card com CTA para a página da solução no site.
 - **Blog** (seção `blog-ssm`): post técnico em rotação sem repetição (`assets/blog/catalog.json`), CTA "Ler no blog".
 - Não há oferta promocional/condição comercial aprovada — nunca inventar desconto, prazo especial ou condição de pagamento.

@@ -51,6 +51,8 @@ PARKED = ("domain is for sale", "this domain is for sale", "buy this domain", "c
           "este dominio esta a venda", "dominio a venda", "parked domain", "domain parking",
           "hugedomains", "sedo.com", "dan.com", "afternic")
 SOFT_BLOCK = {401, 403, 429}
+# Redes sociais do rodapé recusam robôs com 400/999: viram aviso, não erro.
+SOCIAL_DOMAINS = {"facebook.com", "instagram.com", "linkedin.com", "youtube.com"}
 # Encurtadores/links de app que sempre redirecionam para o domínio do serviço.
 KNOWN_REDIRECTS = {("wa.me", "whatsapp.com"), ("bit.ly", "bit.ly"), ("youtu.be", "youtube.com"),
                    ("instagram.com", "instagram.com"), ("fb.me", "facebook.com")}
@@ -124,7 +126,7 @@ def check(url: str, kind: str, expected: list[str]) -> dict:
         else:
             result["erros"].append(f"sem resposta (fora do ar ou recusou a conexão): {falha[:120]}")
         return result
-    if r["status"] in SOFT_BLOCK:
+    if r["status"] in SOFT_BLOCK or (r["status"] >= 400 and base_domain(url) in SOCIAL_DOMAINS):
         result["avisos"].append(f"HTTP {r['status']}: o site bloqueou a verificação automática — abrir no navegador e confirmar")
     elif r["status"] >= 400:
         result["erros"].append(f"HTTP {r['status']}")

@@ -7,6 +7,7 @@
     "dados": {
       "titulo": "O que é carport solar? Entenda como estacionamentos podem gerar energia",
       "texto": "O carport solar é uma estrutura fotovoltaica projetada para estacionamentos: sombra para os veículos e geração de energia no mesmo espaço. O post explica quando a solução compensa e o que avaliar no dimensionamento.",
+      "texto_curto": "Veja quando a solução compensa e o que avaliar no dimensionamento da estrutura.",
       "cta_url": "https://ssmdobrasil.com.br/2026/10/01/o-que-e-carport-solar-entenda-como-estacionamentos-podem-gerar-energia/"
     }
   },
@@ -18,6 +19,7 @@
     "dados": {
       "titulo": "O que é estrutura de solo para energia solar? Sua importância em projetos mais competitivos",
       "texto": "A estrutura de solo influencia diretamente prazo, custo de instalação e desempenho da usina. O post detalha tipos, materiais e critérios de escolha para projetos mais competitivos.",
+      "texto_curto": "Veja como a estrutura de solo afeta prazo, custo de instalação e desempenho da usina.",
       "cta_url": "https://ssmdobrasil.com.br/2026/09/23/o-que-e-estrutura-de-solo-para-energia-solar-entenda-sua-importancia-em-projetos-mais-competitivos/"
     }
   },
@@ -29,6 +31,7 @@
     "dados": {
       "titulo": "Como escolher um fabricante de estruturas solares",
       "texto": "A engenharia da usina foi aprovada e vem a negociação com o fabricante. Capacidade produtiva, certificações, rastreabilidade e suporte técnico: o que separar antes de fechar o pedido.",
+      "texto_curto": "Capacidade produtiva, certificações, rastreabilidade e suporte técnico: o que avaliar antes de fechar o pedido.",
       "cta_url": "https://ssmdobrasil.com.br/2026/09/17/como-escolher-um-fabricante-de-estruturas-solares/"
     }
   },
@@ -40,6 +43,7 @@
     "dados": {
       "titulo": "Aço ou alumínio: qual é o melhor material para estruturas solares?",
       "texto": "Comparativo técnico dos dois materiais mais usados em estruturas fotovoltaicas: resistência, peso, corrosão, custo e aplicação ideal de cada um. Sem resposta única — a escolha depende do projeto.",
+      "texto_curto": "Resistência, peso, corrosão, custo e aplicação ideal: a escolha do material depende do projeto.",
       "cta_url": "https://ssmdobrasil.com.br/2026/09/10/aco-ou-aluminio-qual-e-o-melhor-material-para-estruturas-solares/"
     }
   },
@@ -51,6 +55,7 @@
     "dados": {
       "titulo": "SSM na Intersolar 2026: lançamentos, conexões e uma nova fase da empresa",
       "texto": "Nos dias 25 e 27 de agosto, a SSM apresentou lançamentos e reforçou relacionamentos na Intersolar South America, o maior evento de energia solar da América Latina.",
+      "texto_curto": "Lançamentos e relacionamentos da SSM na Intersolar South America, em 25 e 27 de agosto.",
       "cta_url": "https://ssmdobrasil.com.br/2026/09/03/ssm-na-intersolar-2026-lancamentos-conexoes-e-uma-nova-fase-da-empresa/"
     }
   },
@@ -62,6 +67,7 @@
     "dados": {
       "titulo": "Fornecedor de estruturas solares: 7 critérios para escolher o parceiro ideal",
       "texto": "Checklist prático para avaliar fabricantes antes da compra: processo industrial, padrão entre lotes, documentação técnica, prazos e suporte durante a obra.",
+      "texto_curto": "Checklist para avaliar fabricantes: processo industrial, padrão entre lotes, documentação, prazos e suporte na obra.",
       "cta_url": "https://ssmdobrasil.com.br/2026/08/05/fornecedor-de-estruturas-solares-7-criterios-para-escolher-o-parceiro-ideal/"
     }
   },
@@ -73,6 +79,7 @@
     "dados": {
       "titulo": "Estrutura fotovoltaica: como escolher a solução ideal para cada projeto",
       "texto": "Telhado, solo ou carport? O post orienta como casar tipo de estrutura, material e exigências do projeto — do dimensionamento à entrega.",
+      "texto_curto": "Telhado, solo ou carport? Como casar tipo de estrutura, material e exigências do projeto.",
       "cta_url": "https://ssmdobrasil.com.br/2026/08/05/estrutura-fotovoltaica-para-energia-solar-como-escolher-a-solucao-ideal-para-cada-projeto/"
     }
   },
@@ -84,6 +91,7 @@
     "dados": {
       "titulo": "SSM confirma presença na Intersolar South America 2026",
       "texto": "Convite para conhecer as novidades da SSM no principal encontro do mercado solar da América Latina, entre os dias 25 e 27 de agosto, em São Paulo.",
+      "texto_curto": "Convite para conhecer as novidades da SSM na Intersolar South America, de 25 a 27 de agosto, em São Paulo.",
       "cta_url": "https://ssmdobrasil.com.br/2026/08/05/ssm-no-maior-evento-de-energia-solar-da-america-latina-intersolar-south-america-2026/"
     }
   },
@@ -95,6 +103,7 @@
     "dados": {
       "titulo": "Como montar e manter estruturas de alumínio em ambientes corrosivos",
       "texto": "Litoral e ambientes industriais aceleram a corrosão de estruturas metálicas. Liga correta, tratamento e manutenção: como garantir durabilidade onde o ambiente ataca.",
+      "texto_curto": "Liga correta, tratamento e manutenção para garantir durabilidade em litoral e ambientes industriais.",
       "cta_url": "https://ssmdobrasil.com.br/2026/07/01/como-montar-e-manter-estruturas-de-aluminio-em-ambientes-corrosivos/"
     }
   },
@@ -106,6 +115,7 @@
     "dados": {
       "titulo": "Fixação lateral vs fixação inferior: qual a diferença?",
       "texto": "A diferença entre os dois sistemas de fixação de módulos não está na resistência estrutural, mas na forma de acesso à instalação. Entenda quando usar cada uma.",
+      "texto_curto": "A diferença entre os dois sistemas está na forma de acesso à instalação, não na resistência estrutural.",
       "cta_url": "https://ssmdobrasil.com.br/2026/07/01/fixacao-lateral-vs-fixacao-inferior-qual-a-diferenca/"
     }
   },
@@ -117,6 +127,7 @@
     "dados": {
       "titulo": "Isopletas e vento (NBR 6123) no dimensionamento fotovoltaico",
       "texto": "Módulos e inversores costumam roubar a cena, mas é o vento — e seu cálculo pela NBR 6123 — que decide a segurança e a durabilidade da estrutura. O que revisar no dimensionamento.",
+      "texto_curto": "O vento, calculado pela NBR 6123, decide a segurança e a durabilidade da estrutura. Veja o que revisar.",
       "cta_url": "https://ssmdobrasil.com.br/2026/06/19/isopletas-e-vento-nbr-6123-no-dimensionamento-fotovoltaico/"
     }
   },
@@ -128,6 +139,7 @@
     "dados": {
       "titulo": "Triângulos e correção de inclinação para painel solar: quando usar e como ganhar geração",
       "texto": "Orientação, inclinação e sombreamento definem o resultado do sistema. Quando a correção de inclinação vale o investimento e como ela reduz sombreamento entre fileiras.",
+      "texto_curto": "Quando a correção de inclinação vale o investimento e como ela reduz sombreamento entre fileiras.",
       "cta_url": "https://ssmdobrasil.com.br/2026/06/19/triangulos-e-correcao-de-inclinacao-para-painel-solar-quando-usar-como-ganhar-geracao-e-reduzir-sombreamento/"
     }
   }

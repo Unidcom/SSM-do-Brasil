@@ -28,15 +28,17 @@
   "visual": {
     "cor_primaria": "#00539C",
     "cor_acento": "#01B5E1",
-    "cor_texto": "#2F3A45",
-    "cor_fundo": "#F2F5F8",
-    "cor_suave": "#EEF4F9",
+    "cor_texto": "#34424E",
+    "cor_texto_claro": "#D7E5EF",
+    "cor_fundo": "#EDF2F5",
+    "cor_suave": "#E5F6FB",
+    "cor_borda": "#D8E2E8",
     "cor_escura": "#041E36",
     "cor_bloco_escuro": "#052B4D",
     "cor_titulo": "#0A1A24",
     "fonte": "Inter,Arial,sans-serif",
     "fonte_titulos": "Fira Sans Condensed,Arial Narrow,Arial,sans-serif",
-    "logo_fundo_escuro": "https://ssmdobrasil.com.br/wp-content/uploads/elementor/thumbs/logo-white-rosghll1m2nqrkzjnxg2jk005mo5tji97hmpeo6uio.png"
+    "logo_fundo_escuro": "https://ssmdobrasil.com.br/wp-content/uploads/2026/10/logotipo-branco-ssm-scaled.png"
   },
   "rodape": {
     "linhas": [
@@ -44,6 +46,12 @@
       "Rua Alcídio Zaniolo, 651, Roseira — São José dos Pinhais/PR",
       "vendas@ssmdobrasil.com.br · (41) 99841-8202"
     ],
+    "redes": {
+      "instagram": "https://www.instagram.com/ssm_do_brasil",
+      "facebook": "https://www.facebook.com/ssmdobrasil",
+      "linkedin": "https://www.linkedin.com/company/ssm-do-brasil/",
+      "youtube": "https://www.youtube.com/@ssmdobrasil"
+    },
     "site": "https://ssmdobrasil.com.br",
     "motivo": "Você recebeu este e-mail por fazer parte da base de relacionamento da SSM do Brasil."
   },
@@ -91,10 +99,31 @@
       "tipo": "editorial",
       "titulo": "Assunto, data e introdução",
       "slot": "INTRO",
+      "slots": [
+        "SUBJECT",
+        "PREHEADER",
+        "EDITION_DATE",
+        "INTRO",
+        "HERO_COVER_1",
+        "HERO_COVER_2",
+        "HERO_COVER_3",
+        "TAKEAWAY_1",
+        "TAKEAWAY_2",
+        "TAKEAWAY_3"
+      ],
       "campos": {
-        "assunto": "até 70 caracteres, sustentado pela notícia principal, uma emoção dominante, tom de engenharia",
-        "data_extenso": "data da edição no header",
-        "intro": "curta; conecta a edição a engenharia aplicada, obra, montagem, prazo ou previsibilidade"
+        "assunto": "até 70 caracteres, sustentado pela notícia principal, uma emoção dominante, tom de engenharia; vira também o título (h1) do hero",
+        "data_extenso": "data da edição no header, sem ponto final",
+        "intro": "deck do hero, 20–35 palavras; conecta a edição a engenharia aplicada, obra, montagem, prazo ou previsibilidade",
+        "takeaways": "3 chamadas numeradas (01–03), até 5 palavras cada, uma por destaque do Radar, na mesma ordem",
+        "capas": "3 imagens do mosaico, uma por destaque, na mesma ordem; cada capa linka para a URL do destaque correspondente"
+      },
+      "capas": {
+        "parcial": "assets/partials/hero-cover.html",
+        "quantidade": 3,
+        "origem_padrao": "imagem da própria notícia (og:image da matéria aberta nesta execução)",
+        "origem_alternativa": "imagem gerada, salva em imagens/ da edição e hospedada por HTTPS",
+        "formato": "JPG ou PNG, proporção ~207×210 (quase quadrada); evitar WebP"
       }
     },
     {
@@ -184,13 +213,20 @@
             "HIGHLIGHT_2",
             "HIGHLIGHT_3"
           ],
-          "parcial": "assets/partials/highlight.html",
+          "parcial": "assets/partials/highlight-compact.html",
+          "parciais_por_posicao": {
+            "HIGHLIGHT_1": "assets/partials/highlight-featured.html",
+            "HIGHLIGHT_2": "assets/partials/highlight-compact.html",
+            "HIGHLIGHT_3": "assets/partials/highlight-compact.html"
+          },
+          "rotulo_impacto": "Para a obra:",
           "campos": {
             "tag": "tema estratégico (ex.: regulação, estruturas, mercado)",
             "titulo": "gancho específico, sem clickbait",
-            "contexto": "80–130 palavras",
-            "impacto": "45–80 palavras, rótulo 'O que isso significa para sua obra:'",
-            "url": "fonte"
+            "contexto": "destaque 1: 35–60 palavras; destaques 2 e 3: 25–45 palavras",
+            "impacto": "destaque 1: 15–30 palavras; destaques 2 e 3: 10–25 palavras; o rótulo 'Para a obra:' já vem no parcial",
+            "url": "fonte",
+            "imagem_capa": "URL HTTPS da capa no mosaico do topo (og:image da matéria ou imagem gerada)"
           }
         },
         {
@@ -203,8 +239,9 @@
             "QUICK_4",
             "QUICK_5"
           ],
+          "parcial": "assets/partials/quick-item.html",
           "campos": {
-            "titulo": "uma linha",
+            "titulo": "uma linha, sem resumo",
             "url": "fonte"
           }
         }
@@ -234,6 +271,11 @@
         "fundacao": "Desde 2010",
         "garantia": "Até 30 anos de garantia",
         "certificacoes": "ISO 9001 e CE"
+      },
+      "rotulos": {
+        "fundacao": "transformando engenharia em soluções",
+        "garantia": "de garantia estrutural",
+        "certificacoes": "produção certificada"
       }
     },
     {

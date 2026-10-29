@@ -71,6 +71,54 @@ def vocabulary_counts(html: str, vocab: dict[str, Any]) -> dict[str, dict[str, i
             for group in ("priorizar", "secundario")}
 
 
+COVER_RE = re.compile(
+    r"<a\b[^>]*\bhref\s*=\s*[\"']([^\"']+)[\"'][^>]*>\s*(<img\b[^>]*object-fit\s*:\s*cover[^>]*>)", re.I)
+SOURCE_LINK_RE = re.compile(r"<a\b[^>]*\bhref\s*=\s*[\"']([^\"']+)[\"'][^>]*>\s*Ler a fonte", re.I)
+H1_RE = re.compile(r"<h1\b[^>]*>(.*?)</h1>", re.I | re.S)
+TAKEAWAY_RE = re.compile(r">\s*0([1-3])\s*</span>\s*<br\s*/?>\s*([^<]*)", re.I)
+
+
+def _plain(fragment: str) -> str:
+    return re.sub(r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", " ", fragment))).strip()
+
+
+def validate_layout(html: str, body: dict[str, Any], config: dict[str, Any],
+                    errors: list[str], warnings: list[str]) -> None:
+    """Estrutura do hero (mosaico + h1 + takeaways) e vínculo capa ↔ destaque do Radar."""
+    opening = next((s for s in config.get("secoes", []) if s.get("id") == "abertura"), {})
+    spec = opening.get("capas")
+    if not spec:
+        return
+    expected = int(spec.get("quantidade", 3))
+
+    covers = COVER_RE.findall(html)
+    if len(covers) != expected:
+        errors.append(f"Mosaico do topo com {len(covers)} capa(s) clicável(is); esperado {expected}.")
+    for href, tag in covers:
+        src = (SRC_ATTR.search(tag) or [None, ""])[1]
+        if re.search(r"\.webp(?:[?#]|$)", src, re.I):
+            warnings.append(f"Capa em WebP (Outlook desktop não renderiza): {src[:80]}")
+        if not (re.search(r"\bwidth\s*=", tag, re.I) and re.search(r"\bheight\s*=", tag, re.I)):
+            warnings.append(f"Capa sem width/height explícitos: {src[:80]}")
+
+    sources = SOURCE_LINK_RE.findall(html)
+    if len(sources) != expected:
+        errors.append(f"Radar do setor com {len(sources)} destaque(s) com 'Ler a fonte'; esperado {expected}.")
+    elif [h for h, _ in covers] != sources:
+        errors.append("As capas do mosaico precisam linkar, na mesma ordem, para as URLs dos destaques do Radar.")
+
+    headings = H1_RE.findall(html)
+    if len(headings) != 1:
+        errors.append(f"HTML com {len(headings)} <h1>; esperado exatamente 1 (título do hero).")
+    elif body.get("assunto") and _plain(headings[0]) != _plain(body["assunto"]):
+        errors.append("O <h1> do hero precisa ser igual ao assunto do payload.")
+
+    takeaways = {n: _plain(t) for n, t in TAKEAWAY_RE.findall(html)}
+    missing = [n for n in "123" if not takeaways.get(n)]
+    if missing:
+        errors.append(f"Takeaways do hero ausentes ou vazios: {', '.join('0' + n for n in missing)}.")
+
+
 def campaign_name(config: dict[str, Any], edition: Path) -> str:
     template = config.get("nome_campanha") or f"{config.get('nome', 'Newsletter')} — {{AAAA-MM-DD}}"
     name = fill_date(template, edition_date(edition))
@@ -182,6 +230,8 @@ def validate(edition: Path, config: dict[str, Any]) -> tuple[list[str], list[str
         errors.append("payload.json diverge de newsletter.html — rode com --sync.")
     if body.get("texto") != text:
         errors.append("payload.json diverge de plain-text.txt — rode com --sync.")
+
+    validate_layout(html, body, config, errors, warnings)
 
     vocab = config.get("vocabulario") or {}
     if vocab.get("priorizar") and vocab.get("secundario"):

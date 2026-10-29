@@ -13,6 +13,8 @@ Uso:
 
 --sem-push    grava e faz commit local, sem push (testes)
 --sem-espera  não espera o HTTP 200 (testes; o link é gravado mesmo assim)
+--so-imagens  publica só as imagens geradas de `<edição>/imagens/` em `<pasta>/img/<edição>/` e imprime as URLs
+              HTTPS. Rodar ANTES de montar o HTML, que precisa referenciar essas URLs (capas do mosaico geradas).
 """
 
 from __future__ import annotations
@@ -103,11 +105,55 @@ def wait_published(url: str, expected: str, timeout: int, repo: Path) -> tuple[b
         time.sleep(10)
 
 
+IMAGE_EXTS = {".jpg", ".jpeg", ".png"}
+
+
+def wait_image(url: str, timeout: int) -> bool:
+    deadline = time.monotonic() + timeout
+    while True:
+        try:
+            req = request.Request(f"{url}?v={int(time.time())}", headers={"User-Agent": "newsletter-skill"})
+            with request.urlopen(req, timeout=30) as r:
+                if r.status == 200 and r.headers.get("Content-Type", "").startswith("image/"):
+                    return True
+        except (HTTPError, URLError, TimeoutError):
+            pass
+        if time.monotonic() >= deadline:
+            return False
+        time.sleep(10)
+
+
+def publish_images(edition: Path, repo: Path, rel: str, base_url: str, args: argparse.Namespace) -> dict[str, Any]:
+    """Publica `imagens/` da edição (capas geradas) em `<pasta>/img/<edição>/` do repositório de aprovações."""
+    sources = sorted(p for p in (edition / "imagens").glob("*") if p.suffix.lower() in IMAGE_EXTS)
+    if not sources:
+        raise NewsletterError(f"Nenhuma imagem (jpg/jpeg/png) em {edition / 'imagens'}.")
+    pasta = rel.split("/")[0]
+    folder_rel = f"{pasta}/img/{edition.name}"
+    folder = repo / folder_rel
+    folder.mkdir(parents=True, exist_ok=True)
+    for src in sources:
+        (folder / src.name).write_bytes(src.read_bytes())
+    git(repo, "add", "--", folder_rel)
+    committed = bool(git(repo, "status", "--porcelain", "--", folder_rel))
+    if committed:
+        git(repo, "commit", "-m", f"Imagens da edição: {folder_rel}", "--", folder_rel)
+    if not args.sem_push:
+        git(repo, "push")
+    urls = [f"{base_url}/{folder_rel}/{src.name}" for src in sources]
+    if not args.sem_espera:
+        for url in urls:
+            if not wait_image(url, args.timeout):
+                raise NewsletterError(f"Imagem publicada, mas {url} não respondeu como imagem em {args.timeout}s.")
+    return {"ok": True, "commit": committed, "push": not args.sem_push, "imagens": urls}
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("edicao")
     parser.add_argument("--sem-push", action="store_true")
     parser.add_argument("--sem-espera", action="store_true")
+    parser.add_argument("--so-imagens", action="store_true")
     parser.add_argument("--timeout", type=int, default=300)
     args = parser.parse_args()
 
@@ -121,6 +167,10 @@ def main() -> int:
         if not (repo / ".git").exists():
             raise NewsletterError(f"Repositório de aprovações não encontrado em {repo}. Clone aprovacoes-unid nesse caminho "
                                   "ou ajuste aprovacao_repo.local no config.")
+        if args.so_imagens:
+            result = publish_images(edition, repo, rel, config["aprovacao_repo"]["base_url"], args)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 0
         errors, _ = validate(edition, config)
         if errors:
             raise NewsletterError("Edição inválida: " + "; ".join(errors))

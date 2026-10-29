@@ -156,9 +156,20 @@ Blog ativo (2–3 posts/mês): dimensionamento técnico (isopletas NBR 6123, fix
 | # | Decisão | Valor |
 |---|---|---|
 | 10 | Ordem das seções | **Solução em destaque logo após os destaques** do Radar do setor (e antes do Giro rápido e do blog) |
-| 11 | CTA orçamento | Botão com **ícone WhatsApp**, link direto **wa.me/554198418202** (número oficial do site), com mensagem pré-preenchida |
-| 12 | Visual da seção Solução | **Faixa escura `#052B4D`** (mesma cor do bloco "Pronto para o seu próximo projeto?"), card branco com título branco e texto claro — visual distinto do blog |
+| 11 | CTA orçamento | ~~Botão com ícone WhatsApp~~ — **substituída pelo layout v3 (2026-10-29)**: botão ciano "Solicitar orçamento pelo WhatsApp →", sem ícone; link direto **wa.me/554198418202** (número oficial do site), com mensagem pré-preenchida |
+| 12 | Visual da seção Solução | ~~Faixa escura `#052B4D`~~ — **substituída pelo layout v3 (2026-10-29)**: faixa azul-clara `#E5F6FB` com card branco; continua distinta do bloco do blog (que não tem faixa) |
 | 13 | Base de destino | **Base inteira**: listas 21, 5, 4, 22, 12 (~1.779 contatos). Fora: Equipes SSM (15, 14) e sistêmicas (8, 7) |
+
+### Decisões confirmadas em 2026-10-29 (layout v3)
+
+Referência: `newsletter/2026-10-14-teste-v3/newsletter.html`; a skill `newsletter-ssm` passou a gerar esse layout.
+
+| # | Decisão | Valor |
+|---|---|---|
+| 14 | Layout | Hero com mosaico de 3 capas + título (h1 = assunto) + deck + 3 takeaways; destaque 1 principal e 2 compactos; Solução em faixa `#E5F6FB`; Giro rápido em linhas sem resumo; rodapé com redes sociais |
+| 15 | Tamanho dos textos | Destaque 1: contexto 35–60 e "Para a obra" 15–30 palavras; destaques 2–3: contexto 25–45 e "Para a obra" 10–25. Solução e blog usam `texto_curto` do catálogo |
+| 16 | Imagens das capas | **Imagem da própria notícia (og:image) por padrão**; imagem gerada (ex.: via Codex, publicada em `aprovacoes-unid/ssm/img/`) quando a da matéria não servir |
+| 17 | Decisões #11 e #12 | Substituídas pelo v3 (ver acima) |
 
 ### Pendências remanescentes
 - ~~Remetente verificado na Brevo e ID(s) de lista de destino~~ → resolvido em 2026-10-13 (sender 1 `marketing@ssmdobrasil.com.br`; lista padrão 21). Ajustar `BREVO_LIST_IDS` quando a base definitiva da newsletter for decidida.
