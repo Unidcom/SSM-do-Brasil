@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "newsletter/2026-10-29/newsletter.html"
+      - "newsletter/2026-11-03/newsletter.html"
       - ".github/workflows/publicar-newsletter.yml"
   workflow_dispatch:
 
@@ -31,8 +31,8 @@ jobs:
       - name: Preparar newsletter
         run: |
           mkdir -p _site/baterias-entram-no-leilao
-          cp newsletter/2026-10-29/newsletter.html _site/index.html
-          cp newsletter/2026-10-29/newsletter.html _site/baterias-entram-no-leilao/index.html
+          cp newsletter/2026-11-03/newsletter.html _site/index.html
+          cp newsletter/2026-11-03/newsletter.html _site/baterias-entram-no-leilao/index.html
       - name: Enviar artefato
         uses: actions/upload-pages-artifact@v4
         with:
