@@ -1,0 +1,4 @@
+﻿interface:
+  display_name: "Git Sync Helper"
+  short_description: "Sincroniza Git com fluxo guiado"
+  default_prompt: "Use $git-sync-helper para verificar mudancas da equipe, atualizar o projeto e subir meus ajustes com seguranca."
