@@ -14,9 +14,11 @@ Para blogs da SSM, consultar [Materiais SSM](references/ssm/materiais-ssm.md) du
 
 ## Produção conjunta de texto e imagens
 
+- Para SSM, seguir [Identidade das imagens de blog SSM](references/ssm/identidade-blog.md). A identidade é exclusivamente SSM: não inserir logo, assinatura, crédito visual ou vínculo com Unid/Unidcom. As regras e os templates genéricos de imagens Unidcom desta skill não se aplicam a blogs SSM.
 - As imagens devem ser geradas junto com o texto, com base nos documentos que estão na skill. Consultar os materiais pertinentes à pauta e priorizar os renders oficiais ao representar produtos reais.
 - Entregar o artigo com as imagens finais posicionadas nas seções correspondentes e com textos alternativos descritivos; não deixar apenas sugestões ou marcações de imagens para uma etapa posterior, salvo solicitação do usuário.
 - Em blogs de produtos SSM, incluir renders oficiais extraídos dos materiais pertinentes da skill, com modelo e origem conferidos visualmente. Plantas, fluxos e diagramas são complementares e não substituem as imagens dos produtos. Identificar os renders nas legendas e registrar arquivo e página no manifesto.
+- Quando o render já tiver sido usado em outro blog, priorizar outras vistas oficiais e detalhes pertinentes à nova pauta, preservando a geometria do produto. Não resolver repetição apenas trocando a legenda ou adicionando cartões, fundos artificiais e títulos sobrepostos. Classificar visualmente os arquivos do Drive: o nome do arquivo não comprova que seja render; respeitar as restrições da pauta quanto a fotografias. IA não é o padrão visual da SSM; seguir a referência de blog fornecida pelo usuário.
 
 ## Entrega de blogs SSM em Google Docs
 
@@ -408,6 +410,8 @@ Load `references/geo-optimization.md` for AI citation formatting:
 5. **Continue to Phase 6** (Image Generation) or **Phase 7** (Final Validation)
 
 ### Phase 6: Hybrid Editorial Images
+
+**SSM routing:** For SSM blogs, use `references/ssm/identidade-blog.md` instead of the Unidcom hybrid workflow below. Use official product renders on neutral backgrounds and technically relevant views. Do not add Unidcom branding or AI decorative plates.
 
 Use the hybrid workflow as the default for Unidcom blog images: generate the complex visual scene with AI, then control typography, hierarchy, data, brand, overlays, and final framing in HTML/CSS.
 
