@@ -19,7 +19,7 @@ Newsletter semanal da **SSM do Brasil** (toda quarta, 09:00), indústria brasile
 - **Contagens exatas:** cada seção entrega exatamente a quantidade declarada. Se faltar material, parar e avisar — nunca completar com conteúdo fora das regras.
 - **Aprovação antes da plataforma:** a edição é publicada em `aprovacoes-unid` antes de qualquer chamada à Brevo. Sem link de aprovação, não há rascunho.
 - **Só rascunho:** esta skill cria a campanha em rascunho e nunca envia, agenda ou dispara teste. O disparo aos contatos é manual, no painel. `Status: enviado` só quando o usuário confirmar o disparo.
-- **Selecionar ≠ usar:** a rotação só avança com `rotation.py mark-used`, depois que o rascunho existir (`campaign_id`). Gerar a edição ou publicar para aprovação não avança nada.
+- **Rotação editorial por edição:** `rotation.py select` considera os HTMLs das edições anteriores, inclusive as preparadas para aprovação sem campanha na Brevo. Cada nova newsletter deve trazer um blog e uma solução diferentes da anterior; soluções seguem ordem circular e blogs evitam os últimos 10 itens (ou usam o menos recente quando o catálogo se esgota). Testes não entram. A confirmação de campanha com `mark-used` continua separada e exige `campaign_id`. Se só houver um item ativo, avisar que não é possível alternar.
 - **Uma tentativa externa por execução:** nunca repetir automaticamente chamadas à API. Se a campanha já foi criada e um passo seguinte falhou, retomar só o passo que falhou (`update`) — nunca criar uma segunda campanha.
 - **Artefatos no projeto:** toda edição salva `newsletter.html`, `plain-text.txt`, `payload.json` e `metadata.md` em `newsletter/AAAA-MM-DD/`. Nada fica só em memória ou em pasta temporária.
 - **Variáveis da plataforma:** `{{ mirror }}`, `{{ unsubscribe }}` ficam literalmente no HTML; não são placeholders editoriais.
@@ -54,9 +54,9 @@ O layout de referência é o da edição `newsletter/2026-10-14-teste-v3/newslet
 python .agents/skills/newsletter-ssm/scripts/rotation.py select --date AAAA-MM-DD
 ```
 
-O script lê `config/newsletter.json` e o estado em `newsletter/.rotation-state.json` e devolve, para cada seção com seleção automática, o item escolhido, o motivo, o modelo HTML e se a imagem está pronta para envio.
+O script lê `config/newsletter.json`, os HTMLs das edições anteriores em `newsletter/` e o estado em `newsletter/.rotation-state.json` e devolve, para cada seção com seleção automática, o item escolhido, o motivo, o modelo HTML e se a imagem está pronta para envio.
 
-- **Selecionar não grava nada.** O estado só avança no passo de confirmação, depois do retorno da plataforma.
+- **Selecionar não grava nada.** Os HTMLs salvos reservam os itens para a rotação das próximas edições, sem depender da Brevo. `mark-used` registra separadamente a confirmação da campanha. Ao corrigir uma edição existente, preservar sua seleção, salvo pedido explícito de troca; sincronizar HTML, texto, editorial e payload.
 - Se alguma seção vier com `erro` (catálogo vazio, nenhum item ativo), parar e avisar.
 - Registrar a seleção (seção → item, motivo) em `metadata.md`.
 

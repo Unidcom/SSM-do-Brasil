@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "verificado_em": "2026-11-16T17:36:13+00:00",
-  "html_sha256": "69e130dcef400d6bf971aa7d7fddfa631615ceea9a7d2d23ec085b7533ca9ab1",
+  "verificado_em": "2026-11-17T14:45:50+00:00",
+  "html_sha256": "e1cf0b48071d090766f495e58c966dd79db15149711c2bf2bb19ee67fc61b3a1",
   "total": 27,
   "erros": [],
   "avisos": [
@@ -49,21 +49,21 @@
       "avisos": []
     },
     {
-      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png",
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/SOLO-OFFGRID-1.png",
       "tipo_ref": "imagem",
       "status": 200,
-      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png",
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/SOLO-OFFGRID-1.png",
       "conteudo": "image/png",
       "titulo": "",
       "erros": [],
       "avisos": []
     },
     {
-      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/11/estrutura-carport-solar-ssm.webp",
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/10/suporte-telhado-kalhetao-fibrocimento-tipo-w.jpg",
       "tipo_ref": "imagem",
       "status": 200,
-      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/11/estrutura-carport-solar-ssm.webp",
-      "conteudo": "image/webp",
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/10/suporte-telhado-kalhetao-fibrocimento-tipo-w.jpg",
+      "conteudo": "image/jpeg",
       "titulo": "",
       "erros": [],
       "avisos": []
@@ -139,12 +139,12 @@
       "avisos": []
     },
     {
-      "url": "https://ssmdobrasil.com.br/solution/carport/",
+      "url": "https://ssmdobrasil.com.br/solution/solo/",
       "tipo_ref": "link",
       "status": 200,
-      "url_final": "https://ssmdobrasil.com.br/solution/carport/",
+      "url_final": "https://ssmdobrasil.com.br/solution/solo/",
       "conteudo": "text/html",
-      "titulo": "carport - ssm do brasil",
+      "titulo": "solo - ssm do brasil",
       "erros": [],
       "avisos": []
     },
@@ -199,12 +199,12 @@
       "avisos": []
     },
     {
-      "url": "https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/",
+      "url": "https://ssmdobrasil.com.br/2026/11/04/painel-solar-telhado-kalhetao/",
       "tipo_ref": "link",
       "status": 200,
-      "url_final": "https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/",
+      "url_final": "https://ssmdobrasil.com.br/2026/11/04/painel-solar-telhado-kalhetao/",
       "conteudo": "text/html",
-      "titulo": "estrutura para carport solar: como escolher a ideal? | ssm do brasil",
+      "titulo": "painel solar em telhado kalhetao: 6 verificacoes | ssm",
       "erros": [],
       "avisos": []
     },

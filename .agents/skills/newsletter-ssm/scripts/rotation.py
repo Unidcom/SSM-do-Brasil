@@ -248,6 +248,36 @@ def history_for(state: dict[str, Any], section_id: str) -> list[dict[str, Any]]:
     return state["secoes"].get(section_id, {}).get("historico", [])
 
 
+def editorial_history(config: dict[str, Any], spec: dict[str, Any],
+                      state: dict[str, Any], day: date) -> list[dict[str, Any]]:
+    """Inclui edições anteriores preparadas, mesmo sem campanha na plataforma.
+
+    O HTML é a evidência do item efetivamente usado; testes e a própria edição
+    não entram. A confirmação na Brevo continua independente e não é fabricada.
+    """
+    entries = {entry["data"]: entry for entry in history_for(state, spec["id"])
+               if entry.get("data", "") < day.isoformat()}
+    if spec.get("tipo") not in {"rotacao-catalogo", "pool-sem-repeticao"}:
+        return sorted(entries.values(), key=lambda entry: entry["data"])
+    folder = project_root() / config.get("edicoes", {}).get("pasta", "newsletter")
+    catalog = load_catalog(spec)
+    for edition in sorted(folder.glob("*")):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}(?:-\d+)?", edition.name):
+            continue
+        edition_day = edition.name[:10]
+        source = edition / "newsletter.html"
+        if edition_day >= day.isoformat() or not source.is_file():
+            continue
+        html = source.read_text(encoding="utf-8")
+        matches = [item for item in catalog
+                   if item.get("dados", {}).get("cta_url")
+                   and item["dados"]["cta_url"] in html]
+        if len(matches) == 1:
+            entries[edition_day] = {"data": edition_day, "item": matches[0]["id"],
+                                    "origem": str(source)}
+    return sorted(entries.values(), key=lambda entry: entry["data"])
+
+
 def cmd_select(config: dict[str, Any], args: argparse.Namespace) -> int:
     day = parse_date(args.date, config)
     state = load_state(config)
@@ -258,7 +288,7 @@ def cmd_select(config: dict[str, Any], args: argparse.Namespace) -> int:
     for spec in sections:
         if spec.get("tipo") not in SELECTABLE:
             raise NewsletterError(f"Seção '{spec['id']}' ({spec.get('tipo')}) não tem seleção automática.")
-        results.append(enrich(spec["id"], spec, choose(spec, history_for(state, spec["id"]), day)))
+        results.append(enrich(spec["id"], spec, choose(spec, editorial_history(config, spec, state, day), day)))
     print(json.dumps({"data": day.isoformat(), "estado": str(state_path(config)), "selecoes": results},
                      ensure_ascii=False, indent=2))
     return 1 if any("erro" in r for r in results) else 0

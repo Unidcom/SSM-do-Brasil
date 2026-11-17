@@ -7,7 +7,7 @@ Nesta edição: Do backup residencial às instalações em escolas, esta ediçã
 RADAR DO SETOR
 
 Sete dias sem rede: o projeto vem antes da promessa
-Em 16/11, o Canal Solar apresentou uma residência paulista com 44 módulos e 12 baterias. Segundo a Ecori, o sistema operou isolado da rede por sete dias em teste. O resultado dependeu do consumo, da geração disponível e da capacidade instalada; não é uma autonomia garantida para outros projetos.
+Em 16/11, o Canal Solar apresentou uma residência paulista com 44 módulos e 12 baterias. Segundo a Ecori, o sistema, inicialmente dimensionado para 48 horas de autonomia, operou isolado da rede por sete dias nas condições específicas do teste. O resultado dependeu do consumo e da geração disponível; não garante a mesma autonomia em outros projetos.
 Para a obra: Levante as cargas prioritárias e a autonomia necessária antes de fechar equipamentos, área de módulos e planejamento da instalação.
 Fonte: https://canalsolar.com.br/sistema-hibrido-permite-residencia-opere-sete-dias-apagoes/
 
@@ -22,9 +22,9 @@ Para a obra: Vincule compras e mobilização ao cronograma de conexão; crescime
 Fonte: https://www.arandanet.com.br/revista/fotovolt/noticia/13950-IEA-preve-aumento-de-3,6-TW-em-solar-fotovoltaica-ate-2031.html
 
 SOLUÇÃO EM DESTAQUE
-Carport solar: estacionamentos que também geram energia
-Estruturas metálicas para painéis solares em estacionamentos e garagens, configuradas de acordo com vagas, comprimento e número de módulos.
-https://ssmdobrasil.com.br/solution/carport/
+Estruturas de solo dimensionadas para cada projeto
+Estruturas de solo em aço e alumínio para usinas e geração distribuída, dimensionadas conforme as cargas reais e as condições de cada terreno.
+https://ssmdobrasil.com.br/solution/solo/
 
 GIRO RÁPIDO
 
@@ -44,9 +44,9 @@ SolarEdge comunica encerramento das vendas diretas no Brasil
 https://canalsolar.com.br/solaredge-comunica-fim-das-vendas-diretas-e-das-operacoes-locais-no-brasil/
 
 DO BLOG DA SSM
-Estrutura para carport solar: como escolher a ideal?
-Pilares, vagas, circulação e módulos: o que avaliar ao especificar uma estrutura de carport solar.
-https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/
+Painel solar em telhado Kalhetão: 6 verificações antes de especificar a estrutura
+Seis verificações da cobertura antes de especificar a estrutura para telhado Kalhetão.
+https://ssmdobrasil.com.br/2026/11/04/painel-solar-telhado-kalhetao/
 
 Pronto para o seu próximo projeto?
 Conte com nossa equipe de engenharia para dimensionar a solução estrutural ideal. Fabricação nacional, qualidade certificada e suporte técnico especializado.

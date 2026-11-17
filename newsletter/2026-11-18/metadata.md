@@ -49,3 +49,18 @@ Status: publicado para aprovação; criação na Brevo falhou
 - Substituída a capa textual do relatório IEA por ilustração gerada de usina solar e conexão à rede, sem texto ou logotipos. A imagem anterior ficava cortada no mosaico.
 - Arquivo: imagens/expansao-solar-conexao.png. Imagem ilustrativa; não representa projeto documentado.
 - Textos, links das notícias e demais imagens preservados.
+
+## Correções solicitadas — 17/11/2026
+
+- Solução substituída: solo — Estruturas de solo dimensionadas para cada projeto.
+- Blog substituído: painel-solar-telhado-kalhetao — seis verificações antes de especificar.
+- Primeira notícia: dimensionamento inicial para 48 horas; sete dias isolado nas condições específicas do teste.
+- Rotação editorial passa a considerar HTMLs de edições anteriores, independentemente do campaign_id; confirmação da Brevo permanece separada.
+
+## Publicação pendente — 17/11/2026
+
+- HTML e payload corrigidos; validate_edition.py --sync aprovado.
+- Verificação de 27 URLs aprovada; Facebook retornou bloqueio HTTP 400.
+- Teste de rotação: 18/11 seleciona solo/Kalhetão; 25/11 seleciona telhados/outro artigo.
+- GitHub recusou escrita em Unidcom/aprovacoes-unid (HTTP 403: Resource not accessible by integration). Página pública ainda não atualizada.
+- Sincronização adicional com Unidcom/SSM-do-Brasil bloqueada pela revisão automática por exigir autorização explícita para exportação dos artefatos.
