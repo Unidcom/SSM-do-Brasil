@@ -1,0 +1,104 @@
+{
+  "assunto": "Solar com backup: autonomia começa no dimensionamento",
+  "pre_header": "Projetos em escolas, expansão solar e decisões que afetam a execução da obra.",
+  "destaques": [
+    {
+      "tag": "Armazenamento",
+      "titulo": "Sete dias sem rede: o projeto vem antes da promessa",
+      "contexto": "Em 16/11, o Canal Solar apresentou uma residência paulista com 44 módulos e 12 baterias. Segundo a Ecori, o sistema operou isolado da rede por sete dias em teste. O resultado dependeu do consumo, da geração disponível e da capacidade instalada; não é uma autonomia garantida para outros projetos.",
+      "impacto": "Levante as cargas prioritárias e a autonomia necessária antes de fechar equipamentos, área de módulos e planejamento da instalação.",
+      "url": "https://canalsolar.com.br/sistema-hibrido-permite-residencia-opere-sete-dias-apagoes/",
+      "imagem": "https://canalsolar.com.br/wp-content/uploads/2026/11/Canal-Solar-Sistema-hibrido-permite-que-residencia-no-interior-de-SP-opere-por-sete-dias-durante-apagoes.webp",
+      "data": "2026-11-16",
+      "esperado": "Sistema híbrido permite",
+      "takeaway": "Backup exige dimensionamento"
+    },
+    {
+      "tag": "Projetos",
+      "titulo": "Escolas recebem solar: montagem pede planejamento por unidade",
+      "contexto": "Segundo o Canal Solar, em 15/11, São Bernardo do Campo iniciará instalações fotovoltaicas em três escolas. A primeira etapa prevê 132 módulos por escola, dentro de um projeto municipal que combina geração solar e modernização da iluminação.",
+      "impacto": "Confira cobertura, acesso e sequência de montagem de cada unidade antes de programar fabricação e entrega das estruturas.",
+      "url": "https://canalsolar.com.br/municipio-investira-45-milhoes-solar-predios-publicos/",
+      "imagem": "https://canalsolar.com.br/wp-content/uploads/2026/11/Canal-Solar-Foto_-PMSBC_Patricia-Ribeiro.webp",
+      "data": "2026-11-15",
+      "esperado": "Município paulista investirá",
+      "takeaway": "Montagem por unidade"
+    },
+    {
+      "tag": "Planejamento",
+      "titulo": "IEA projeta expansão solar; conexão continua decisiva",
+      "contexto": "A Fotovolt destacou em 13/11 a projeção da IEA de 3,6 TW adicionais de solar até 2031. O relatório também aponta filas de conexão e reforça a necessidade de redes e flexibilidade acompanharem a expansão.",
+      "impacto": "Vincule compras e mobilização ao cronograma de conexão; crescimento projetado do mercado não confirma a execução de cada empreendimento.",
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13950-IEA-preve-aumento-de-3,6-TW-em-solar-fotovoltaica-ate-2031.html",
+      "imagem": "https://unidcom.github.io/aprovacoes-unid/ssm/img/2026-11-18/expansao-solar-conexao.png",
+      "data": "2026-11-13",
+      "esperado": "IEA prevê aumento",
+      "takeaway": "Conexão orienta o cronograma",
+      "imagem_origem": "Ilustração gerada por IA; usina solar e conexão à rede, sem representar empreendimento específico."
+    }
+  ],
+  "curtas": [
+    {
+      "titulo": "Tarifa Hora Certa: proposta ainda depende da diretoria da ANEEL",
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13955-Aneel-propoe-enquadramento-compulsorio-na-tarifa-branca.html",
+      "data": "2026-11-13",
+      "esperado": "Aneel propõe enquadramento"
+    },
+    {
+      "titulo": "ABGD passa a se chamar RED e incorpora armazenamento à atuação",
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13952-ABGD-muda-nome-para-RED-e-amplia-atuacao.html",
+      "data": "2026-11-13",
+      "esperado": "ABGD muda nome"
+    },
+    {
+      "titulo": "Estudo conecta solar, baterias e eletrificação ao custo do sistema",
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13954-Energia-solar-e-baterias-podem-reduzir-custos-com-eletricidade-em-40-.html",
+      "data": "2026-11-13",
+      "esperado": "Energia solar e baterias"
+    },
+    {
+      "titulo": "Termômetro ACL compara atratividade dos mercados livre e regulado",
+      "url": "https://canalsolar.com.br/nova-ferramenta-acompanhar-precos-livres-energia/",
+      "data": "2026-11-14",
+      "esperado": "Mercado ganha nova ferramenta"
+    },
+    {
+      "titulo": "SolarEdge comunica encerramento das vendas diretas no Brasil",
+      "url": "https://canalsolar.com.br/solaredge-comunica-fim-das-vendas-diretas-e-das-operacoes-locais-no-brasil/",
+      "data": "2026-11-13",
+      "esperado": "SolarEdge comunica fim"
+    }
+  ],
+  "selecoes": {
+    "solucao-destaque": {
+      "item": {
+        "id": "carport",
+        "ativo": true,
+        "modelo": "assets/solucoes/models/item-1.html",
+        "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png",
+        "dados": {
+          "titulo": "Carport solar: estacionamentos que também geram energia",
+          "texto": "Estruturas metálicas para instalação de painéis solares em estacionamentos e garagens. A linha Carport Standard 2 linhas usa estrutura biposte em Aço Civil 300, com fixações em inox 304 e possibilidade de personalização conforme vagas, comprimento e número de módulos — unindo sombra para o veículo e geração de energia no mesmo espaço.",
+          "texto_curto": "Estruturas metálicas para painéis solares em estacionamentos e garagens, configuradas de acordo com vagas, comprimento e número de módulos.",
+          "cta_url": "https://ssmdobrasil.com.br/solution/carport/"
+        }
+      },
+      "motivo": "primeiro ativo (sem histórico)"
+    },
+    "blog-ssm": {
+      "item": {
+        "id": "estrutura-para-carport-solar-como-escolher",
+        "ativo": true,
+        "modelo": "assets/blog/models/item-1.html",
+        "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/11/estrutura-carport-solar-ssm.webp",
+        "dados": {
+          "titulo": "Estrutura para carport solar: como escolher a ideal?",
+          "texto": "Um guia técnico para avaliar pilares, vagas, circulação e módulos ao especificar estruturas de carport solar.",
+          "texto_curto": "Pilares, vagas, circulação e módulos: o que avaliar ao especificar uma estrutura de carport solar.",
+          "cta_url": "https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/"
+        }
+      },
+      "motivo": "primeiro ativo fora dos últimos 10 usados"
+    }
+  }
+}

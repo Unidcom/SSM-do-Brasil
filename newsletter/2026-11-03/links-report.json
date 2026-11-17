@@ -1,0 +1,284 @@
+{
+  "ok": true,
+  "verificado_em": "2026-11-03T12:03:16+00:00",
+  "html_sha256": "8fc857792fe76db82e228c1f5430250fcfa28b7f52364ecff1f29c9b05108cf6",
+  "total": 27,
+  "erros": [],
+  "avisos": [
+    "https://www.facebook.com/ssmdobrasil: HTTP 400: o site bloqueou a verificação automática — abrir no navegador e confirmar"
+  ],
+  "resultados": [
+    {
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/10/logotipo-branco-ssm-scaled.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/10/logotipo-branco-ssm-scaled.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/wp-content/uploads/2026/10/Canal-Solar-Baterias-terao-leiloes-com-contratos-de-15-anos-e-precos-teto-de-ate-R-176-milhao-por-MW_ano.webp",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/wp-content/uploads/2026/10/Canal-Solar-Baterias-terao-leiloes-com-contratos-de-15-anos-e-precos-teto-de-ate-R-176-milhao-por-MW_ano.webp",
+      "conteudo": "image/webp",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/wp-content/uploads/2026/10/Canal-Solar-UFPI-aposta-em-carport-solar-para-reduzir-conta-de-luz-de-R-12-milhao.webp",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/wp-content/uploads/2026/10/Canal-Solar-UFPI-aposta-em-carport-solar-para-reduzir-conta-de-luz-de-R-12-milhao.webp",
+      "conteudo": "image/webp",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/wp-content/uploads/2026/10/Canal-Solar-Plano-nacional_-matriz-eletrica-ate-99-limpa-avanco-da-solar-e-expansao-do-armazenamento.webp",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/wp-content/uploads/2026/10/Canal-Solar-Plano-nacional_-matriz-eletrica-ate-99-limpa-avanco-da-solar-e-expansao-do-armazenamento.webp",
+      "conteudo": "image/webp",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/SOLO-OFFGRID-1.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/SOLO-OFFGRID-1.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/PRIME-MODULAR.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/06/PRIME-MODULAR.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://img.icons8.com/ios-filled/50/01B5E1/instagram-new--v1.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://img.icons8.com/ios-filled/50/01B5E1/instagram-new--v1.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://img.icons8.com/ios-filled/50/01B5E1/facebook-new.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://img.icons8.com/ios-filled/50/01B5E1/facebook-new.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://img.icons8.com/ios-filled/50/01B5E1/linkedin.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://img.icons8.com/ios-filled/50/01B5E1/linkedin.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://img.icons8.com/ios-filled/50/01B5E1/youtube-play.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://img.icons8.com/ios-filled/50/01B5E1/youtube-play.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/baterias-terao-leiloes-contratos-15-anos/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/baterias-terao-leiloes-contratos-15-anos/",
+      "conteudo": "text/html",
+      "titulo": "baterias terao leiloes com contratos de 15 anos e precos-teto de ate r$ 1,76 milhao por mw/ano",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/ufpi-carport-solar-conta-de-luz/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/ufpi-carport-solar-conta-de-luz/",
+      "conteudo": "text/html",
+      "titulo": "ufpi aposta em carport solar para reduzir conta de luz de r$ 1,2 milhao",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/plano-nacional-matriz-eletrica-avanco-solar/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/plano-nacional-matriz-eletrica-avanco-solar/",
+      "conteudo": "text/html",
+      "titulo": "plano nacional: matriz eletrica ate 99% limpa, avanco da solar e expansao do armazenamento",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/solution/solo/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/solution/solo/",
+      "conteudo": "text/html",
+      "titulo": "solo - ssm do brasil",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/conta-de-luz-inflacao-setembro-ipca/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/conta-de-luz-inflacao-setembro-ipca/",
+      "conteudo": "text/html",
+      "titulo": "conta de luz sobe quase 8% e lidera alta da inflacao em setembro, diz ibge",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/bandeira-verde-outubro-apos-dois-anos-vermelha/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/bandeira-verde-outubro-apos-dois-anos-vermelha/",
+      "conteudo": "text/html",
+      "titulo": "o que mudou para outubro ter bandeira verde apos 2 anos no vermelho?",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/abrate-avalia-pnast-transmissao/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/abrate-avalia-pnast-transmissao/",
+      "conteudo": "text/html",
+      "titulo": "abrate avalia que primeira etapa da pnast fortalece acesso a transmissao",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13741-Parque-de-diversoes-inaugura-maior-carport-solar-da-California.html",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.arandanet.com.br/revista/fotovolt/noticia/13741-Parque-de-diversoes-inaugura-maior-carport-solar-da-California.html",
+      "conteudo": "text/html",
+      "titulo": "parque de diversoes inaugura maior carport solar da california",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13740-Compensacao-por-cortes-de-geracao:-sai-a-lista-de-elegibilidade.html",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.arandanet.com.br/revista/fotovolt/noticia/13740-Compensacao-por-cortes-de-geracao:-sai-a-lista-de-elegibilidade.html",
+      "conteudo": "text/html",
+      "titulo": "compensacao por cortes de geracao: sai a lista de elegibilidade",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/2026/10/20/estrutura-solar-modular-vantagens-para-projetos-em-solo/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/2026/10/20/estrutura-solar-modular-vantagens-para-projetos-em-solo/",
+      "conteudo": "text/html",
+      "titulo": "estrutura solar modular: vantagens para projetos em solo - ssm do brasil",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://wa.me/554198418202?text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es.",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://api.whatsapp.com/send/?phone=554198418202&text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0",
+      "conteudo": "text/html",
+      "titulo": "compartilhe no whatsapp",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://wa.me/554198418202",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://api.whatsapp.com/send/?phone=554198418202&text&type=phone_number&app_absent=0",
+      "conteudo": "text/html",
+      "titulo": "compartilhe no whatsapp",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.instagram.com/ssm_do_brasil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.instagram.com/ssm_do_brasil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      "conteudo": "text/html",
+      "titulo": "instagram",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.facebook.com/ssmdobrasil",
+      "tipo_ref": "link",
+      "status": 400,
+      "url_final": "https://www.facebook.com/ssmdobrasil",
+      "conteudo": "text/html",
+      "titulo": "",
+      "erros": [],
+      "avisos": [
+        "HTTP 400: o site bloqueou a verificação automática — abrir no navegador e confirmar"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/company/ssm-do-brasil/?viewAsMember=true",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.linkedin.com/company/ssm-do-brasil/?viewAsMember=true",
+      "conteudo": "text/html",
+      "titulo": "ssm do brasil | linkedin",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.youtube.com/@ssmdobrasil",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.youtube.com/@ssmdobrasil",
+      "conteudo": "text/html",
+      "titulo": "ssm do brasil - youtube",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br",
+      "conteudo": "text/html",
+      "titulo": "principal - ssm do brasil",
+      "erros": [],
+      "avisos": []
+    }
+  ]
+}

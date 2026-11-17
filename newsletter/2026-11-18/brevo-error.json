@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "status": 401,
+  "code": "unauthorized",
+  "motivo": "IP não autorizado pela Brevo",
+  "campaign_id": null,
+  "rotacao_avancada": false
+}

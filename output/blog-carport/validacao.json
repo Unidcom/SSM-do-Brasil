@@ -1,0 +1,18 @@
+{
+  "article_words": 1353,
+  "word_count_target": [
+    1100,
+    1400
+  ],
+  "h1_count": 1,
+  "faq_count": 4,
+  "images": 5,
+  "restricted_terms_present": false,
+  "required_offer_present": true,
+  "cta_present": true,
+  "schema_valid": true,
+  "image_visual_review": "Quatro renders oficiais e sete páginas do PDF exportado revisados visualmente; sem distorção ou sobreposição.",
+  "python_validator": "indisponível: executável Python inacessível",
+  "official_ssm_renders": 4,
+  "google_docs": "https://docs.google.com/document/d/18AOs-xn1s9F7AbLB3itSapflAdaKxiiPBTO2eFvHmqo"
+}

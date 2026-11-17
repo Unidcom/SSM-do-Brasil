@@ -1,0 +1,55 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Estrutura para carport solar: Guia do Iniciante para escolher a configuração ideal para seu estacionamento",
+      "description": "Saiba como layout, circulação, vagas e módulos influenciam a escolha de uma estrutura para carport solar.",
+      "inLanguage": "pt-BR",
+      "about": "Estrutura para carport solar",
+      "articleSection": "Carport",
+      "publisher": {
+        "@type": "Organization",
+        "name": "SSM do Brasil",
+        "url": "https://ssmdobrasil.com.br/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O número de módulos define quantas vagas serão cobertas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. As dimensões e a disposição dos módulos precisam ser relacionadas às medidas das vagas e à geometria da cobertura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso escolher apenas pela área total do estacionamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A área é um ponto de partida. Acessos, circulação, obstáculos e posições possíveis dos apoios também precisam ser considerados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A fixação pode ser definida pelo pavimento existente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A definição exige avaliação das condições de apoio e da solução de fundação e ancoragem prevista para o projeto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que enviar para iniciar a análise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Envie localização, planta ou levantamento com medidas, quantidade de vagas, acessos e dados dos módulos pretendidos."
+          }
+        }
+      ]
+    }
+  ]
+}

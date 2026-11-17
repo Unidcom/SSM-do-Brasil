@@ -1,0 +1,284 @@
+{
+  "ok": true,
+  "verificado_em": "2026-11-16T17:36:13+00:00",
+  "html_sha256": "69e130dcef400d6bf971aa7d7fddfa631615ceea9a7d2d23ec085b7533ca9ab1",
+  "total": 27,
+  "erros": [],
+  "avisos": [
+    "https://www.facebook.com/ssmdobrasil: HTTP 400: o site bloqueou a verificação automática — abrir no navegador e confirmar"
+  ],
+  "resultados": [
+    {
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/10/logotipo-branco-ssm-scaled.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/10/logotipo-branco-ssm-scaled.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/wp-content/uploads/2026/11/Canal-Solar-Sistema-hibrido-permite-que-residencia-no-interior-de-SP-opere-por-sete-dias-durante-apagoes.webp",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/wp-content/uploads/2026/11/Canal-Solar-Sistema-hibrido-permite-que-residencia-no-interior-de-SP-opere-por-sete-dias-durante-apagoes.webp",
+      "conteudo": "image/webp",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/wp-content/uploads/2026/11/Canal-Solar-Foto_-PMSBC_Patricia-Ribeiro.webp",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/wp-content/uploads/2026/11/Canal-Solar-Foto_-PMSBC_Patricia-Ribeiro.webp",
+      "conteudo": "image/webp",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://unidcom.github.io/aprovacoes-unid/ssm/img/2026-11-18/expansao-solar-conexao.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://unidcom.github.io/aprovacoes-unid/ssm/img/2026-11-18/expansao-solar-conexao.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/07/ACESSORIOS-SSM-1920-x-1080-px-5.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/wp-content/uploads/2026/11/estrutura-carport-solar-ssm.webp",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/wp-content/uploads/2026/11/estrutura-carport-solar-ssm.webp",
+      "conteudo": "image/webp",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://img.icons8.com/ios-filled/50/01B5E1/instagram-new--v1.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://img.icons8.com/ios-filled/50/01B5E1/instagram-new--v1.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://img.icons8.com/ios-filled/50/01B5E1/facebook-new.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://img.icons8.com/ios-filled/50/01B5E1/facebook-new.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://img.icons8.com/ios-filled/50/01B5E1/linkedin.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://img.icons8.com/ios-filled/50/01B5E1/linkedin.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://img.icons8.com/ios-filled/50/01B5E1/youtube-play.png",
+      "tipo_ref": "imagem",
+      "status": 200,
+      "url_final": "https://img.icons8.com/ios-filled/50/01B5E1/youtube-play.png",
+      "conteudo": "image/png",
+      "titulo": "",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/sistema-hibrido-permite-residencia-opere-sete-dias-apagoes/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/sistema-hibrido-permite-residencia-opere-sete-dias-apagoes/",
+      "conteudo": "text/html",
+      "titulo": "sistema hibrido permite que residencia no interior de sp opere por sete dias durante apagoes",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/municipio-investira-45-milhoes-solar-predios-publicos/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/municipio-investira-45-milhoes-solar-predios-publicos/",
+      "conteudo": "text/html",
+      "titulo": "municipio paulista investira r$ 4,5 milhoes em energia solar em predios publicos",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13950-IEA-preve-aumento-de-3,6-TW-em-solar-fotovoltaica-ate-2031.html",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.arandanet.com.br/revista/fotovolt/noticia/13950-IEA-preve-aumento-de-3,6-TW-em-solar-fotovoltaica-ate-2031.html",
+      "conteudo": "text/html",
+      "titulo": "iea preve aumento de 3,6 tw em solar fotovoltaica ate 2031",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/solution/carport/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/solution/carport/",
+      "conteudo": "text/html",
+      "titulo": "carport - ssm do brasil",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13955-Aneel-propoe-enquadramento-compulsorio-na-tarifa-branca.html",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.arandanet.com.br/revista/fotovolt/noticia/13955-Aneel-propoe-enquadramento-compulsorio-na-tarifa-branca.html",
+      "conteudo": "text/html",
+      "titulo": "aneel propoe enquadramento compulsorio na tarifa branca",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13952-ABGD-muda-nome-para-RED-e-amplia-atuacao.html",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.arandanet.com.br/revista/fotovolt/noticia/13952-ABGD-muda-nome-para-RED-e-amplia-atuacao.html",
+      "conteudo": "text/html",
+      "titulo": "abgd muda nome para red e amplia atuacao",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.arandanet.com.br/revista/fotovolt/noticia/13954-Energia-solar-e-baterias-podem-reduzir-custos-com-eletricidade-em-40-.html",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.arandanet.com.br/revista/fotovolt/noticia/13954-Energia-solar-e-baterias-podem-reduzir-custos-com-eletricidade-em-40-.html",
+      "conteudo": "text/html",
+      "titulo": "energia solar e baterias podem reduzir custos com eletricidade em 40%",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/nova-ferramenta-acompanhar-precos-livres-energia/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/nova-ferramenta-acompanhar-precos-livres-energia/",
+      "conteudo": "text/html",
+      "titulo": "mercado ganha nova ferramenta para acompanhar precos livres de energia",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://canalsolar.com.br/solaredge-comunica-fim-das-vendas-diretas-e-das-operacoes-locais-no-brasil/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://canalsolar.com.br/solaredge-comunica-fim-das-vendas-diretas-e-das-operacoes-locais-no-brasil/",
+      "conteudo": "text/html",
+      "titulo": "solaredge comunica fim das vendas diretas e das operacoes locais no brasil",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/",
+      "conteudo": "text/html",
+      "titulo": "estrutura para carport solar: como escolher a ideal? | ssm do brasil",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://wa.me/554198418202?text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es.",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://api.whatsapp.com/send/?phone=554198418202&text=Ol%C3%A1%2C+vim+da+newsletter+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0",
+      "conteudo": "text/html",
+      "titulo": "compartilhe no whatsapp",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://wa.me/554198418202",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://api.whatsapp.com/send/?phone=554198418202&text&type=phone_number&app_absent=0",
+      "conteudo": "text/html",
+      "titulo": "compartilhe no whatsapp",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.instagram.com/ssm_do_brasil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.instagram.com/ssm_do_brasil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      "conteudo": "text/html",
+      "titulo": "instagram",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.facebook.com/ssmdobrasil",
+      "tipo_ref": "link",
+      "status": 400,
+      "url_final": "https://www.facebook.com/ssmdobrasil",
+      "conteudo": "text/html",
+      "titulo": "",
+      "erros": [],
+      "avisos": [
+        "HTTP 400: o site bloqueou a verificação automática — abrir no navegador e confirmar"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/company/ssm-do-brasil/?viewAsMember=true",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.linkedin.com/company/ssm-do-brasil/?viewAsMember=true",
+      "conteudo": "text/html",
+      "titulo": "ssm do brasil | linkedin",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://www.youtube.com/@ssmdobrasil",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://www.youtube.com/@ssmdobrasil",
+      "conteudo": "text/html",
+      "titulo": "ssm do brasil - youtube",
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "url": "https://ssmdobrasil.com.br",
+      "tipo_ref": "link",
+      "status": 200,
+      "url_final": "https://ssmdobrasil.com.br",
+      "conteudo": "text/html",
+      "titulo": "principal - ssm do brasil",
+      "erros": [],
+      "avisos": []
+    }
+  ]
+}

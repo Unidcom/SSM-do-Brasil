@@ -8,6 +8,29 @@ description: Create and optimize blog posts for traditional search engines (SEO)
 ## Purpose
 Create high-performing blog posts optimized for both traditional search engines (SEO) and generative AI citations (GEO) through a structured four-phase workflow: Research → Outline → Draft → Optimize.
 
+## Referências de produtos SSM do Brasil
+
+Para blogs da SSM, consultar [Materiais SSM](references/ssm/materiais-ssm.md) durante a pesquisa de produtos e o planejamento de imagens. A referência reúne cópias locais do Catálogo 2026, Catálogo Extrusão e Renders Produtos SSM. Carregar apenas os PDFs pertinentes à pauta; usar os catálogos para fundamentar informações de produtos e os renders para imagens fiéis aos produtos.
+
+## Produção conjunta de texto e imagens
+
+- As imagens devem ser geradas junto com o texto, com base nos documentos que estão na skill. Consultar os materiais pertinentes à pauta e priorizar os renders oficiais ao representar produtos reais.
+- Entregar o artigo com as imagens finais posicionadas nas seções correspondentes e com textos alternativos descritivos; não deixar apenas sugestões ou marcações de imagens para uma etapa posterior, salvo solicitação do usuário.
+- Em blogs de produtos SSM, incluir renders oficiais extraídos dos materiais pertinentes da skill, com modelo e origem conferidos visualmente. Plantas, fluxos e diagramas são complementares e não substituem as imagens dos produtos. Identificar os renders nas legendas e registrar arquivo e página no manifesto.
+
+## Entrega de blogs SSM em Google Docs
+
+- Para blogs da SSM, entregar por padrão um Google Docs nativo e editável, com títulos hierárquicos, tabela nativa quando houver, links e imagens inseridas nas seções correspondentes. Markdown e HTML locais são arquivos de apoio e não substituem o DOCS, salvo pedido explícito do usuário por outro formato.
+- A conta de destino preferida é `id.actionmkt@gmail.com`. Verificar a conta proprietária retornada pelo Drive; quando a conexão usar outra conta, disponibilizar o documento à conta de destino com permissão de edição e informar essa diferença, sem afirmar que o arquivo foi criado nela. Não transferir propriedade automaticamente.
+- Usar a skill de Google Docs disponível e os conectores autenticados. Criar na pasta `ChatGPT` da raiz do Meu Drive, salvo outra pasta informada pelo usuário. Confirmar o documento por leitura após a escrita e entregar seu link verificado.
+
+## Conclusão, conversão e otimizações de SEO para blogs SSM
+
+- Escrever uma conclusão desenvolvida: sintetizar os critérios decisivos do artigo, explicar como eles orientam a escolha e conduzir o leitor ao próximo passo comercial. Não encerrar apenas com uma recapitulação breve ou uma frase genérica.
+- O CTA da conclusão deve incentivar o contato com os consultores SSM para avaliar a aplicação ou solicitar uma proposta, com benefício concreto e link de contato oficial verificado quando disponível. Não pedir comentários, compartilhamentos ou envio de informações pelo próprio blog; pedidos de contato devem encaminhar ao canal comercial.
+- Ao final do mesmo Google Docs, após o conteúdo do artigo, incluir uma seção intitulada “Otimizações de SEO”, identificada como dados para publicação. Informar título SEO, meta-descrição, palavra-chave principal, palavras-chave de apoio, slug, categoria, tags sugeridas, intenção de busca e links internos/CTA. Incluir textos alternativos das imagens quando houver e orientações de dados estruturados pertinentes, sem inventar métricas de busca ou URLs de publicação.
+- Manter os metadados separados do texto publicável e da sua contagem de palavras. Se a pauta fixar um título ou uma meta-descrição, preservar o original e identificar qualquer alternativa otimizada como sugestão.
+
 ## When to Use This Skill
 
 Activate when user requests blog content creation. Two modes supported:

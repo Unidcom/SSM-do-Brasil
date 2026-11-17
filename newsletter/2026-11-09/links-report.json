@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "verificado_em": "2026-11-06T16:45:00+00:00",
+  "html_sha256": "42b41ff5cf7fd44002bbb57a713101b241d51d131434c2d93010f7c01266e365",
+  "total": 23,
+  "erros": [],
+  "avisos": [
+    "As três capas de notícias são WebP; mantidas por serem as imagens principais públicas disponibilizadas pelas fontes. Outlook desktop pode não as exibir.",
+    "Validação de páginas feita por navegação web após o verificador local exceder o tempo de rede do ambiente."
+  ],
+  "resultados": [
+    {"url":"https://canalsolar.com.br/usinas-solares-eolicas-revisao-garantia-fisica/","tipo_ref":"link","status":200,"url_final":"https://canalsolar.com.br/usinas-solares-eolicas-revisao-garantia-fisica/","erros":[],"avisos":[]},
+    {"url":"https://canalsolar.com.br/aneel-mudancas-regras-geracao-compartilhada/","tipo_ref":"link","status":200,"url_final":"https://canalsolar.com.br/aneel-mudancas-regras-geracao-compartilhada/","erros":[],"avisos":[]},
+    {"url":"https://canalsolar.com.br/por-que-zero-grid-atrai-empresas-produtores-rurais/","tipo_ref":"link","status":200,"url_final":"https://canalsolar.com.br/por-que-zero-grid-atrai-empresas-produtores-rurais/","erros":[],"avisos":[]},
+    {"url":"https://canalsolar.com.br/justica-afasta-icms-creditos-solar-maranhao/","tipo_ref":"link","status":200,"url_final":"https://canalsolar.com.br/justica-afasta-icms-creditos-solar-maranhao/","erros":[],"avisos":[]},
+    {"url":"https://canalsolar.com.br/isencao-imposto-importacao-inversores-camara-deputados/","tipo_ref":"link","status":200,"url_final":"https://canalsolar.com.br/isencao-imposto-importacao-inversores-camara-deputados/","erros":[],"avisos":[]},
+    {"url":"https://canalsolar.com.br/parana-chuva-queda-de-energia/","tipo_ref":"link","status":200,"url_final":"https://canalsolar.com.br/parana-chuva-queda-de-energia/","erros":[],"avisos":[]},
+    {"url":"https://www.energychannel.co/post/sungrow-entra-em-nova-era-no-mercado-residencial-do-brasil-com-bateria-pr%C3%B3pria-e-inversores-h%C3%ADbridos","tipo_ref":"link","status":200,"url_final":"https://www.energychannel.co/post/sungrow-entra-em-nova-era-no-mercado-residencial-do-brasil-com-bateria-pr%C3%B3pria-e-inversores-h%C3%ADbridos","erros":[],"avisos":[]},
+    {"url":"https://canalsolar.com.br/mercado-armazenamento-profssionais-qualificados/","tipo_ref":"link","status":200,"url_final":"https://canalsolar.com.br/mercado-armazenamento-profssionais-qualificados/","erros":[],"avisos":[]},
+    {"url":"https://ssmdobrasil.com.br/solution/carport/","tipo_ref":"link","status":200,"url_final":"https://ssmdobrasil.com.br/solution/carport/","erros":[],"avisos":[]},
+    {"url":"https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/","tipo_ref":"link","status":200,"url_final":"https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/","erros":[],"avisos":[]}
+  ]
+}

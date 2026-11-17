@@ -1,1 +1,6 @@
 *.pdf filter=lfs diff=lfs merge=lfs -text
+
+# PDFs adicionados pela sincronizacao via API (armazenamento Git comum)
+".agents/skills/seo-geo-blog-writer/references/ssm/_Catalogo Extrusão Oficial_Unid.pdf" -filter -diff -merge -text
+"output/blog-carport/referencias/docs-atualizado.pdf" -filter -diff -merge -text
+"output/blog-carport/referencias/docs-seo-final.pdf" -filter -diff -merge -text

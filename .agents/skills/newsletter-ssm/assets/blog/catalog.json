@@ -1,5 +1,29 @@
 [
   {
+    "id": "estrutura-para-carport-solar-como-escolher",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/11/estrutura-carport-solar-ssm.webp",
+    "dados": {
+      "titulo": "Estrutura para carport solar: como escolher a ideal?",
+      "texto": "Um guia técnico para avaliar pilares, vagas, circulação e módulos ao especificar estruturas de carport solar.",
+      "texto_curto": "Pilares, vagas, circulação e módulos: o que avaliar ao especificar uma estrutura de carport solar.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/"
+    }
+  },
+  {
+    "id": "painel-solar-telhado-kalhetao",
+    "ativo": true,
+    "modelo": "assets/blog/models/item-1.html",
+    "imagem_publica": "https://ssmdobrasil.com.br/wp-content/uploads/2026/10/suporte-telhado-kalhetao-fibrocimento-tipo-w.jpg",
+    "dados": {
+      "titulo": "Painel solar em telhado Kalhetão: 6 verificações antes de especificar a estrutura",
+      "texto": "Confira seis verificações da cobertura antes de definir a estrutura para painéis solares em telhado Kalhetão.",
+      "texto_curto": "Seis verificações da cobertura antes de especificar a estrutura para telhado Kalhetão.",
+      "cta_url": "https://ssmdobrasil.com.br/2026/11/04/painel-solar-telhado-kalhetao/"
+    }
+  },
+  {
     "id": "estrutura-solar-modular-projetos-solo",
     "ativo": true,
     "modelo": "assets/blog/models/item-1.html",

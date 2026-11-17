@@ -1,0 +1,54 @@
+RADAR ESTRUTURAL SSM — Segunda-feira, 9 de novembro de 2026
+
+Garantia física: debate para usinas solares e eólicas
+
+Nesta edição: Consulta do MME, propostas para a geração compartilhada e aplicações Zero Grid: acompanhe os temas desta edição e seus pontos de atenção para o planejamento de empreendimentos.
+
+RADAR DO SETOR
+
+Garantia física solar entra em revisão no MME
+O MME abriu, em 4 de novembro, consulta pública para atualizar metodologias de cálculo e revisão da garantia física de usinas solares e eólicas. A proposta considera particularidades operacionais das fontes e o tratamento dos cortes de geração; as contribuições vão até 18 de dezembro.
+Para a obra: Revise premissas de geração, conexão e curtailment nos estudos de usinas antes de consolidar a engenharia e os compromissos comerciais.
+Fonte: https://canalsolar.com.br/usinas-solares-eolicas-revisao-garantia-fisica/
+
+ANEEL avalia novas condições para geração compartilhada
+A área técnica da ANEEL recomenda consulta pública sobre permanência mínima dos participantes, divisão de créditos e possíveis cobranças por alterações de beneficiários. A recomendação ainda não altera as regras.
+Para a obra: Projetos compartilhados devem manter documentação, titularidade e arranjo de consumidores bem organizados desde a contratação.
+Fonte: https://canalsolar.com.br/aneel-mudancas-regras-geracao-compartilhada/
+
+Zero Grid reposiciona projetos com restrição de injeção
+Empresas e produtores rurais têm recorrido a configurações Zero Grid diante de limites de conexão e exportação. A solução acompanha o consumo e regula a geração fotovoltaica para operar sem injetar excedentes na rede.
+Para a obra: A especificação precisa compatibilizar perfil de carga, controle, inversor e estrutura com a estratégia de autoconsumo.
+Fonte: https://canalsolar.com.br/por-que-zero-grid-atrai-empresas-produtores-rurais/
+
+SOLUÇÃO EM DESTAQUE
+Carport solar: estacionamentos que também geram energia
+Estruturas metálicas para painéis solares em estacionamentos e garagens, configuradas de acordo com vagas, comprimento e número de módulos.
+https://ssmdobrasil.com.br/solution/carport/
+
+GIRO RÁPIDO
+
+- Justiça afasta ICMS sobre créditos de energia solar no Maranhão: https://canalsolar.com.br/justica-afasta-icms-creditos-solar-maranhao/
+- Isenção de imposto para inversores solares avança na Câmara: https://canalsolar.com.br/isencao-imposto-importacao-inversores-camara-deputados/
+- Tempestades no Paraná ampliam debate sobre solar com armazenamento: https://canalsolar.com.br/parana-chuva-queda-de-energia/
+- Sungrow apresenta bateria e inversores híbridos para o mercado residencial: https://www.energychannel.co/post/sungrow-entra-em-nova-era-no-mercado-residencial-do-brasil-com-bateria-pr%C3%B3pria-e-inversores-h%C3%ADbridos
+- Mercado de armazenamento demanda capacitação técnica: https://canalsolar.com.br/mercado-armazenamento-profssionais-qualificados/
+
+DO BLOG DA SSM
+Estrutura para carport solar: como escolher a ideal?
+Pilares, vagas, circulação e módulos: o que avaliar ao especificar uma estrutura de carport solar.
+https://ssmdobrasil.com.br/2026/11/06/estrutura-carport-solar/
+
+Pronto para o seu próximo projeto?
+Conte com nossa equipe de engenharia para dimensionar a solução estrutural ideal. Fabricação nacional, qualidade certificada e suporte técnico especializado.
+Solicite orçamento: https://wa.me/554198418202?text=Olá,+vim+da+newsletter+e+gostaria+de+mais+informações.
+
+SSM do Brasil
+SSM do Brasil · CNPJ 12.273.815/0001-23
+Rua Alcídio Zaniolo, 651, Roseira — São José dos Pinhais/PR
+vendas@ssmdobrasil.com.br · (41) 99841-8202
+https://ssmdobrasil.com.br
+WhatsApp: (41) 99841-8202
+
+Você recebeu este e-mail por fazer parte da base de relacionamento da SSM do Brasil.
+Cancelar inscrição: {{ unsubscribe }}

@@ -1,0 +1,134 @@
+<!doctype html>
+<!-- Template-base: copie para a pasta do artigo e adapte copy, imagens, cor e data-output. -->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Unidcom | Imagens editoriais — IA no marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root { --orange:#ff7c1a; --navy:#061725; --ink:#0a2233; --white:#f7fafc; --muted:#b8c6cf; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#dce3e7; color:var(--white); font-family:Montserrat,Arial,sans-serif; }
+    .toolbar { position:sticky; top:0; z-index:50; display:flex; justify-content:center; gap:10px; padding:12px; background:rgba(4,15,24,.94); backdrop-filter:blur(10px); }
+    .toolbar button { border:0; border-radius:999px; padding:10px 16px; background:var(--orange); color:#fff; font:800 12px Montserrat,Arial,sans-serif; cursor:pointer; }
+    main { display:grid; gap:32px; justify-content:center; padding:32px; }
+    .wrap { width:1200px; }
+    .caption { margin:0 0 10px; color:#304656; font-size:13px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    .art { position:relative; width:1200px; height:675px; overflow:hidden; isolation:isolate; background:var(--navy); box-shadow:0 20px 50px rgba(6,23,37,.18); }
+    .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-3; }
+    .grain { position:absolute; inset:0; z-index:8; opacity:.16; pointer-events:none; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.23'/%3E%3C/svg%3E"); mix-blend-mode:soft-light; }
+    .topline { position:absolute; top:42px; left:52px; right:52px; z-index:10; display:flex; justify-content:space-between; align-items:center; }
+    .brand { width:158px; height:auto; }
+    .series { color:#fff; font-size:12px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+    .eyebrow { display:inline-flex; align-items:center; gap:10px; color:var(--orange); font-size:13px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
+    .eyebrow::before { content:""; width:30px; height:4px; background:var(--orange); }
+    h2 { margin:18px 0 0; font-size:66px; line-height:.94; letter-spacing:-.045em; text-transform:uppercase; }
+    h2 em { display:block; color:var(--orange); font-style:italic; font-weight:800; }
+    .support { margin:22px 0 0; max-width:520px; color:#d8e2e7; font-size:20px; line-height:1.35; font-weight:600; }
+    .number { position:absolute; right:48px; bottom:32px; z-index:10; color:rgba(255,255,255,.2); font-size:92px; line-height:1; font-weight:900; }
+    .chips { display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; }
+    .chip { padding:11px 15px; border:1px solid rgba(255,255,255,.25); border-radius:999px; background:rgba(3,18,29,.46); color:#fff; font-size:13px; font-weight:800; backdrop-filter:blur(8px); }
+    .chip.hot { border-color:var(--orange); background:var(--orange); }
+
+    .hero .photo { object-position:center; }
+    .hero::before { content:""; position:absolute; inset:0; z-index:-2; background:linear-gradient(90deg,rgba(3,17,28,.98) 0%,rgba(3,17,28,.92) 38%,rgba(3,17,28,.28) 66%,rgba(3,17,28,.1)); }
+    .hero::after { content:""; position:absolute; left:0; bottom:0; width:70%; height:8px; background:var(--orange); }
+    .hero .copy { position:absolute; left:54px; top:142px; z-index:5; width:620px; }
+    .hero h2 { font-size:72px; }
+    .hero .metric-line { position:absolute; left:54px; bottom:48px; z-index:6; display:flex; align-items:center; gap:12px; }
+    .hero .metric-line span { color:#aebbc3; font-size:12px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    .hero .metric-line b { color:#fff; font-size:18px; }
+    .hero .metric-line i { width:35px; height:2px; background:var(--orange); }
+
+    .social .photo { object-position:center 54%; }
+    .social::before { content:""; position:absolute; inset:0; z-index:-2; background:linear-gradient(90deg,rgba(3,17,28,.98) 0%,rgba(3,17,28,.92) 41%,rgba(3,17,28,.22) 70%),linear-gradient(0deg,rgba(3,17,28,.65),transparent 45%); }
+    .social .copy { position:absolute; left:54px; top:150px; z-index:5; width:500px; }
+    .social h2 { font-size:57px; }
+    .social .signal { position:absolute; left:54px; bottom:48px; z-index:6; display:grid; grid-template-columns:repeat(3,160px); gap:10px; }
+    .social .signal div { padding:15px 16px; border-left:4px solid var(--orange); background:rgba(4,21,33,.82); backdrop-filter:blur(8px); }
+    .social .signal b { display:block; font-size:15px; }
+    .social .signal small { display:block; margin-top:5px; color:var(--muted); font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+
+    .funnel .photo { object-position:center; filter:saturate(.86) brightness(.82); }
+    .funnel::before { content:""; position:absolute; inset:0; z-index:-2; background:linear-gradient(180deg,rgba(3,17,28,.9) 0%,rgba(3,17,28,.16) 43%,rgba(3,17,28,.92) 100%); }
+    .funnel .copy { position:absolute; left:54px; top:118px; z-index:5; width:820px; }
+    .funnel h2 { font-size:61px; }
+    .flow { position:absolute; left:54px; right:54px; bottom:44px; z-index:6; display:grid; grid-template-columns:minmax(0,1fr) 34px minmax(0,1fr) 34px minmax(0,1fr) 34px minmax(0,1fr); gap:0; align-items:stretch; }
+    .step { position:relative; padding:17px 20px; background:rgba(4,21,33,.88); border-top:4px solid rgba(255,255,255,.18); backdrop-filter:blur(10px); }
+    .connector { position:relative; z-index:3; display:grid; place-items:center; }
+    .connector span { width:30px; height:30px; display:grid; place-items:center; border-radius:50%; background:var(--orange); box-shadow:0 0 0 5px rgba(255,124,26,.14); }
+    .connector svg { display:block; width:16px; height:16px; fill:none; stroke:#fff; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+    .step strong { display:block; color:#fff; font-size:18px; }
+    .step span { display:block; margin-top:5px; color:var(--muted); font-size:11px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    .step:last-child { border-color:var(--orange); }
+
+    .tracking .photo { object-position:center; }
+    .tracking::before { content:""; position:absolute; inset:0; z-index:-2; background:linear-gradient(90deg,rgba(3,17,28,.92),rgba(3,17,28,.5) 46%,rgba(3,17,28,.14)),linear-gradient(0deg,rgba(3,17,28,.88),transparent 58%); }
+    .tracking .copy { position:absolute; left:54px; top:132px; z-index:5; width:650px; }
+    .tracking h2 { font-size:59px; }
+    .tracking .audit { position:absolute; left:54px; right:54px; bottom:42px; z-index:6; display:flex; align-items:stretch; background:rgba(4,21,33,.9); border:1px solid rgba(255,255,255,.15); backdrop-filter:blur(12px); }
+    .audit div { flex:1; position:relative; padding:16px 20px; border-right:1px solid rgba(255,255,255,.14); }
+    .audit div:last-child { border-right:0; background:var(--orange); }
+    .audit b { display:block; font-size:15px; }
+    .audit span { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:800; letter-spacing:.07em; text-transform:uppercase; }
+    .audit div:last-child span { color:#fff; }
+    @media (max-width:1250px) { .wrap { transform-origin:top left; } main { justify-content:start; } }
+  </style>
+</head>
+<body>
+  <header class="toolbar">
+    <button onclick="exportArt('hero','ia-marketing-metricas-capa-editorial.png')">Exportar capa</button>
+    <button onclick="exportArt('social','ia-marketing-distribuicao-social-editorial.png')">Exportar redes</button>
+    <button onclick="exportArt('funnel','ia-marketing-atribuicao-resultados-editorial.png')">Exportar mensuração</button>
+    <button onclick="exportArt('tracking','ia-marketing-tracking-conversao-editorial.png')">Exportar tracking</button>
+  </header>
+  <main>
+    <div class="wrap"><p class="caption">Imagem 01 · Capa</p>
+      <section id="hero" class="art hero" data-output="tema-capa-editorial.png">
+        <img class="photo" src="imagens/ia-marketing-metricas-capa.png" alt="">
+        <div class="topline"><img class="brand" src="{{UNIDCOM_LOGO_DATA_URI}}" alt="Unidcom"><span class="series">Inteligência de marketing</span></div>
+        <div class="copy"><span class="eyebrow">IA no marketing digital</span><h2>Aparecer <em>não é vender.</em></h2><p class="support">A distância entre visibilidade e resultado está aumentando.</p></div>
+        <div class="metric-line"><span>Métrica de vaidade</span><i></i><b>Decisão de negócio</b></div><span class="number">01</span><div class="grain"></div>
+      </section>
+    </div>
+
+    <div class="wrap"><p class="caption">Imagem 02 · Distribuição social</p>
+      <section id="social" class="art social" data-output="tema-secao-01-editorial.png">
+        <img class="photo" src="imagens/ia-marketing-distribuicao-social.png" alt="">
+        <div class="topline"><img class="brand" src="{{UNIDCOM_LOGO_DATA_URI}}" alt="Unidcom"><span class="series">O algoritmo mudou</span></div>
+        <div class="copy"><span class="eyebrow">Sinal 1</span><h2>O alcance mudou <em>de regra.</em></h2><p class="support">Distribuição agora depende mais do interesse do que da sua base de seguidores.</p></div>
+        <div class="signal"><div><b>Retenção</b><small>Prende atenção</small></div><div><b>Salvamento</b><small>Gera utilidade</small></div><div><b>Compartilhamento</b><small>Amplia alcance</small></div></div><span class="number">02</span><div class="grain"></div>
+      </section>
+    </div>
+
+    <div class="wrap"><p class="caption">Imagem 03 · Mensuração</p>
+      <section id="funnel" class="art funnel" data-output="tema-secao-02-editorial.png">
+        <img class="photo" src="imagens/ia-marketing-atribuicao-resultados.png" alt="">
+        <div class="topline"><img class="brand" src="{{UNIDCOM_LOGO_DATA_URI}}" alt="Unidcom"><span class="series">Da visibilidade à receita</span></div>
+        <div class="copy"><span class="eyebrow">Sinal 2</span><h2>Impressão de IA <em>não fecha a conta.</em></h2></div>
+        <div class="flow"><div class="step"><strong>Visibilidade</strong><span>Resposta de IA</span></div><div class="connector" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M5 12h13M13 7l5 5-5 5"/></svg></span></div><div class="step"><strong>Sessão</strong><span>GA4</span></div><div class="connector" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M5 12h13M13 7l5 5-5 5"/></svg></span></div><div class="step"><strong>Lead</strong><span>CRM</span></div><div class="connector" aria-hidden="true"><span><svg viewBox="0 0 24 24"><path d="M5 12h13M13 7l5 5-5 5"/></svg></span></div><div class="step"><strong>Venda</strong><span>Receita</span></div></div><span class="number">03</span><div class="grain"></div>
+      </section>
+    </div>
+
+    <div class="wrap"><p class="caption">Imagem 04 · Tracking</p>
+      <section id="tracking" class="art tracking" data-output="tema-secao-03-editorial.png">
+        <img class="photo" src="imagens/ia-marketing-tracking-conversao.png" alt="">
+        <div class="topline"><img class="brand" src="{{UNIDCOM_LOGO_DATA_URI}}" alt="Unidcom"><span class="series">Mensuração que orienta ação</span></div>
+        <div class="copy"><span class="eyebrow">Como medir</span><h2>Dado limpo. <em>Decisão melhor.</em></h2><p class="support">Antes de aumentar a mídia, conecte os sinais que realmente provam conversão.</p></div>
+        <div class="audit"><div><b>Pixel</b><span>Evento confiável</span></div><div><b>Conversions API</b><span>Sinal completo</span></div><div><b>CRM</b><span>Lead qualificado</span></div><div><b>ROAS</b><span>Resultado real</span></div></div><span class="number">04</span><div class="grain"></div>
+      </section>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script>
+    async function exportArt(id,name){
+      const art=document.getElementById(id);
+      const canvas=await html2canvas(art,{scale:1,useCORS:true,backgroundColor:null,width:1200,height:675});
+      const link=document.createElement('a'); link.download=name; link.href=canvas.toDataURL('image/png'); link.click();
+    }
+  </script>
+</body>
+</html>
