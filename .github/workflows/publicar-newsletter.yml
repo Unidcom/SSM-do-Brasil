@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "newsletter/2026-11-03/newsletter.html"
+      - "aprovacoes/ssm/newsletter-2026-11-18.html"
       - ".github/workflows/publicar-newsletter.yml"
   workflow_dispatch:
 
@@ -30,9 +31,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Preparar newsletter
         run: |
-          mkdir -p _site/baterias-entram-no-leilao
+          mkdir -p _site/baterias-entram-no-leilao _site/ssm
           cp newsletter/2026-11-03/newsletter.html _site/index.html
           cp newsletter/2026-11-03/newsletter.html _site/baterias-entram-no-leilao/index.html
+          cp aprovacoes/ssm/newsletter-2026-11-18.html _site/ssm/newsletter-2026-11-18.html
       - name: Enviar artefato
         uses: actions/upload-pages-artifact@v4
         with:
