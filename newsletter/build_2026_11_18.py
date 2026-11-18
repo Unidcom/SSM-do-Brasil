@@ -16,7 +16,7 @@ preheader = 'Projetos em escolas, expansão solar e decisões que afetam a execu
 intro = 'Do backup residencial às instalações em escolas, esta edição conecta geração solar, armazenamento e planejamento de montagem para quem precisa entregar sistemas compatíveis com as condições reais de cada obra.'
 highlights = [
  dict(tag='Armazenamento', titulo='Sete dias sem rede: o projeto vem antes da promessa',
- contexto='Em 16/11, o Canal Solar apresentou uma residência paulista com 44 módulos e 12 baterias. Segundo a Ecori, o sistema operou isolado da rede por sete dias em teste. O resultado dependeu do consumo, da geração disponível e da capacidade instalada; não é uma autonomia garantida para outros projetos.',
+ contexto='Em 16/11, o Canal Solar apresentou uma residência paulista com 44 módulos e 12 baterias. Segundo a Ecori, o sistema operou isolado da rede por sete dias em teste.',
  impacto='Levante as cargas prioritárias e a autonomia necessária antes de fechar equipamentos, área de módulos e planejamento da instalação.',
  url='https://canalsolar.com.br/sistema-hibrido-permite-residencia-opere-sete-dias-apagoes/',
  imagem='https://canalsolar.com.br/wp-content/uploads/2026/11/Canal-Solar-Sistema-hibrido-permite-que-residencia-no-interior-de-SP-opere-por-sete-dias-durante-apagoes.webp',
